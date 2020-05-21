@@ -337,17 +337,19 @@ header {
 
 
 .mob-nav {
+  z-index: 95;
   position: fixed;
   width: 375px;
   height: 100%;
   top: 0px;
-  left: -375px;
-  background-color: rgba(0, 0, 0, 0.384);
+  left: -850px;
+  background-color: rgba(0, 0, 0, 0.6);
   color: rgb(255, 255, 255);
   text-decoration: none;
   text-transform: uppercase;
   line-height: 65px;
-  transition: left 0.4s ease;
+  font-weight: 300;
+  transition: left 0.6s ease;
 }
 
 .mob-nav.show {
@@ -548,25 +550,25 @@ nav .fa-instagram {
 /* Mob Hamburger */
 
 .nav-icon-1{
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
-  z-index: 99;
+  z-index: 999;
   width: 29px;
   height: 29px;
   transition: .1s;
-  margin: 23px 23px;
+  margin: 26px 25px;
   cursor: pointer;
   display: inline-block;
-}
-.nav-icon-1 span{
+  }
+  
+  .nav-icon-1 span{
   width: 5px;
   height: 5px;
-  background-color: #fff;
+  background-color: rgb(255, 255, 255);
   display: block;
   border-radius: 50%;
   position: absolute;
-
 }
 .nav-icon-1:hover span{
   transform: scale(1.2);
