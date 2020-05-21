@@ -92,26 +92,26 @@ body {
 }
 
 .cb-slideshow li:nth-child(1) span { 
-  background-image: url(../images/Cayman-Chromatic-Squid-Slideshow-3.jpg) 
+  background-image: url(../images/Cayman-Chromatic-Squid-Slideshow-4.jpg) 
 }
 .cb-slideshow li:nth-child(2) span { 
-  background-image: url(../images/Cayman-Chromatic-Feather-Duster-Worm-Slideshow-1.jpg);
+  background-image: url(../images/Cayman-Chromatic-Feather-Duster-Worm-Slideshow-2.jpg);
   animation-delay: 6s; 
 }
 .cb-slideshow li:nth-child(3) span { 
-  background-image: url(../images/Cayman-Chromatic-Seahorse-Slideshow-2.jpg);
+  background-image: url(../images/Cayman-Chromatic-Seahorse-Slideshow-3.jpg);
   animation-delay: 12s; 
 }
 .cb-slideshow li:nth-child(4) span { 
-  background-image: url(../images/Cayman-Chromatic-Shrimp-Slideshow-1.jpg);
+  background-image: url(../images/Cayman-Chromatic-Shrimp-Slideshow-2.jpg);
   animation-delay: 18s; 
 }
 .cb-slideshow li:nth-child(5) span { 
-  background-image: url(../images/Cayman-Chromatic-Turtle-Slideshow-1.jpg);
+  background-image: url(../images/Cayman-Chromatic-Turtle-Slideshow-2.jpg);
   animation-delay: 24s; 
 }
 .cb-slideshow li:nth-child(6) span { 
-  background-image: url(../images/Cayman-Chromatic-Starfish-Slideshow-1.jpg);
+  background-image: url(../images/Cayman-Chromatic-Starfish-Slideshow-2.jpg);
   animation-delay: 30s; 
 }
 
