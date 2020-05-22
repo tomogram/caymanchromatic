@@ -299,7 +299,7 @@ body {
   font-weight: 300;
 }
 
-/* @media (min-width: 1150px) {
+@media (min-width: 1150px) {
   .mobile-topbar {  
     display: none;
   }
@@ -309,7 +309,7 @@ body {
 .sidebar-content {
     display: none;
   }
-} */
+}
 
 header {
   max-width: 1024px;
