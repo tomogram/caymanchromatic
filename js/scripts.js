@@ -93,3 +93,14 @@ function topFunction() {
   document.body.scrollTop = 0; // For Safari
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
+
+// Shopping Cart
+
+function openCart() {
+  var x = document.getElementById("purchase-side");
+  if (x.style.right === "-750px") {
+    x.style.right = "0px";
+  } else {
+    x.style.right = "-750px";
+  }
+}

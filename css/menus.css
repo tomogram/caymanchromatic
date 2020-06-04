@@ -100,6 +100,12 @@ html {
     margin-right: -20px;
 }
 
+.desktop-topbar .cart {
+    color: #fff;
+    font-size: 1.25rem;
+    cursor: pointer;
+}
+
 
 @media (max-width: 975px) {
     .desktop-topbar {
@@ -318,6 +324,22 @@ nav .fa-instagram {
     font-size: 1.8rem;
 }
 
+.mobcart {
+    position: relative;
+    float: right;
+    top: 5rem;
+    right: 1.6rem;
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+}
+
+@media (min-width: 414px) {
+    .mobcart {
+        top: 1.8rem;
+        right: 4.7rem;
+    }
+}
+
 /* Mob Hamburger */
 
 .hamburger {
@@ -446,6 +468,10 @@ nav .fa-instagram {
     .nav-icon-1 {
         display: none;
     }
+
+    .mobcart {
+        display: none;
+    }
 }
 
 
@@ -566,7 +592,6 @@ footer .fa-instagram:hover {
     }
 
     .backup button {
-
         padding-right: 9vw;
 
     }

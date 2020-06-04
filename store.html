@@ -45,7 +45,16 @@
         </div>
     </div>
 
+
     <div class="topbarshadow"></div>
+
+    <ul class="mobcart">
+        <li>
+            <div class="cart" onclick="openCart()">
+                <i class="fas fa-shopping-cart"></i>
+            </div>
+        </li>
+    </ul>
 
     <!-- Mobile Menu -->
     <div class="mobile-topbar">
@@ -129,6 +138,11 @@
                         class="fab fa-social fa-facebook-f"></i></a></li>
             <li><a href="https://www.instagram.com/caymanchromatic/" target="_blank"><i
                         class="fab fa-social fa-instagram"></i></a></li>
+            <li>
+                <div class="cart" onclick="openCart()">
+                    <i class="fas fa-shopping-cart"></i>
+                </div>
+            </li>
         </ul>
 
     </div>
@@ -146,6 +160,41 @@
         <div class="parallax"></div>
     </div>
 
+
+    <div id="purchase-side">
+
+        <h1>Purchase options</h1>
+
+        <div class="cart" onclick="openCart()">
+            <i class="fas fa-angle-double-right"></i>
+        </div>
+        
+        <img src="gallery2/TN/Cayman-Chromatic-Art-S2-Web-Seahorse-2.jpg" alt="">
+        <h2>Your artwork of choice</h2>
+        <h3>Material</h3>
+        <div id="typeOfPurchase">
+            <button class="purch-btn" onclick="purchaseSelection('canvas-select')">Canvas</button>
+            <button class="purch-btn" onclick="purchaseSelection('paper-select')">Paper</button>
+        </div>
+
+        <h3>Size (inches)</h3>
+        <div id="sizeOfPurchase">
+            <button class="purch-btn" onclick="purchaseSelection('size1')">16x20</button>
+            <button class="purch-btn" onclick="purchaseSelection('size2')">16x24</button>
+            <button class="purch-btn" onclick="purchaseSelection('size3')">18x27</button>
+            <button class="purch-btn" onclick="purchaseSelection('size4')">24x36</button>
+        </div>
+
+        <h2 class="item-total">Item total</h2>
+        <div id="addToCart">
+            <div class="price">
+                <h1>$250.00</h1>
+            </div>
+            <button class="purch-btn addCart" onclick="addToBasket('addToCart')">Add to Cart</button>
+        </div>
+
+        <h2 class="contactus">Don't see what you're looking for? Contact us for custom options.</h2>
+    </div>
 
     <div class="container" id="find-your-art">
         <h1>Find your perfect Chromatic artwork</h1>
@@ -709,23 +758,25 @@
                 <button onclick="topFunction()" id="footerBtn" title="Return to top">
                     <i class="fas fa-angle-up"></i>
                     Return to top</button>
-                
+
             </div>
 
             <div class="footer-logo-mob">
                 <img width="35" src="images/Cayman-Chromatic-logo-small-1.svg"
                     alt="Cayman Chromatic Underwater Photography Art footer white logo">
             </div>
-    
+
             <div class="footer-logo-tab">
                 <img width="220" src="images/Cayman-Chromatic-logo-navigation-black-2.svg"
                     alt="Cayman Chromatic Underwater Photography Art footer white logo">
             </div>
-            
-            <a href="https://www.facebook.com/caymanchromatic" target="_blank"><i class="fab fa-social fa-facebook-f"></i></a>
-            <a href="https://www.instagram.com/caymanchromatic/" target="_blank"><i class="fab fa-social fa-instagram"></i></a>
+
+            <a href="https://www.facebook.com/caymanchromatic" target="_blank"><i
+                    class="fab fa-social fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/caymanchromatic/" target="_blank"><i
+                    class="fab fa-social fa-instagram"></i></a>
         </div>
-        
+
     </footer>
 
 

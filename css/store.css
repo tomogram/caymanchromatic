@@ -185,7 +185,7 @@ h2 {
 
 .parallax {
     z-index: 0;
-    background-image: linear-gradient(to right bottom, rgb(255, 162, 80, .5), rgb(255, 96, 146, .7)), url('../images/cayman-chromatic-wall-art-home-decor-mockup.jpg');
+    background-image: linear-gradient(to right bottom, rgba(255, 93, 81, 0.5), rgba(255, 209, 59, 0.5) ), url('../images/cayman-chromatic-wall-art-home-decor-mockup.jpg');
     height: 50rem;
     background-attachment: fixed;
     background-position: center;
@@ -528,4 +528,129 @@ h2 {
         margin: 0 2vw;
     }
 
+}
+
+
+/* ------------Right Side Cart------------- */
+
+#purchase-side {
+    z-index: 999;
+    position: fixed;
+    width: 650px;
+    height: 100%;
+    top: 0px;
+    right: -750px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    color: rgb(45, 45, 45);
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 65px;
+    font-weight: 300;
+    padding: 1.5rem 2.5rem;
+    border-width: 15px;
+    border-style: solid;
+    border-image: 
+      linear-gradient(
+        to bottom, 
+        rgb(255, 162, 80), 
+        rgb(255, 96, 146)
+      ) 1 100%;
+    transition: all 0.6s ease;
+}
+
+/* #purchase-side.open {
+    right: 0px;
+} */
+
+#purchase-side img {
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 1rem 0;
+}
+
+#purchase-side .fa-angle-double-right {
+    top: 1.5rem;
+    left: 2.5rem;
+    position: absolute;
+    font-size: 3rem;
+    text-align: left;
+    float: left;
+    transition: 0.6s ease;
+}
+
+#purchase-side .fa-angle-double-right:hover {
+    left: 3rem;
+}
+
+#purchase-side h1 {
+    letter-spacing: .2rem;
+}
+
+#purchase-side h2 {
+    margin-bottom: 1rem;
+}
+
+#purchase-side h3 {
+    letter-spacing: .1rem;
+    text-transform: none;
+    font-size: 1.7rem;
+    text-align: left;
+}
+
+#purchase-side .contactus {
+    margin-left: auto;
+    margin-right: auto;
+    letter-spacing: .1rem;
+    text-transform: none;
+    font-size: 1.3rem;
+    line-height: 1.6rem;
+    width: 400px;
+    text-align: center;
+    padding: 3rem;
+}
+
+.item-total {
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-transform: none;
+    letter-spacing: .1rem;
+    text-align: left;
+    font-size: 1.5rem;
+}
+
+.purch-btn {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem 2rem;
+    width: 300px;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 400;
+    font-size: 1.3rem;
+    background-color: #fff;
+    border: 2px solid rgb(218, 218, 218);
+}
+
+.addCart {
+    width: 400px;
+    font-size: 1.5;
+}
+
+.purch-btn:active {
+    background-color: rgb(255, 200, 200);
+
+}
+
+.purch-btn:focus {outline:0 !important;}
+
+.price {
+    margin-left: 2rem;
+}
+
+#addToCart {
+    display: flex;
+    margin-top: 1rem;
 }
