@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description"
+        content="Underwater Dive Photography Art from the Cayman Islands by Thomas Williamson & Luxi Zhou">
+    <meta name="keywords"
+        content="Cayman Chromatic Underwater Photography Art Cayman Islands Home Decor Gift Wallart Canvas Scuba Diving">
+    <meta name="author" content="Thomas Williamson">
+    <title>Cayman Chromatic - Store | Underwater Photography Art from the Cayman Islands</title>
+
+
+
+    <link rel="shortcut icon" type="image/png" href="images/cayman-chromatic-favicon.png">
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300,400,600&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+    <link rel="stylesheet" href="css/menus.css">
+    <link rel="stylesheet" href="css/store.css">
+    <link rel="stylesheet" href="css/flex-gallery.css">
+
+</head>
+
+<body>
+
+    <!-- ---Hamburger Menu Button--- -->
+    <div class="hamburger">
+        <div class="icon nav-icon-1">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+
+    <div class="topbarshadow"></div>
+
+    <!-- Mobile Menu -->
+    <div class="mobile-topbar">
+
+        <img class="tablet-logo" src="images/Cayman-Chromatic-logo-navigation-white.svg"
+            alt="Cayman Chromatic Underwater Photography Art logo">
+
+        <div class="mob-wrapper">
+
+            <nav class="mob-nav">
+
+                <div class="nav-logo">
+                    <div class="sidelogo">
+                        <img width="270" src="images/Cayman-Chromatic-logo-navigation-white.svg"
+                            alt="Cayman Chromatic Underwater Photography Art logo">
+                    </div>
+
+                </div>
+
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a class="gal-btn">Gallery
+                            <span class="fas fa-plus rotate"></span>
+                        </a>
+                        <ul class="gal-show">
+                            <li><a href="gallery-chromatic-2.html">Chromatic Series 2</a></li>
+                            <li><a href="gallery-chromatic-1.html">Chromatic Series 1</a></li>
+                            <li><a href="gallery-monochromatic.html">Monochromatic Art</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="store.html">Store</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li>
+                        <div class="social-mob">
+                            <a href="https://www.facebook.com/caymanchromatic" target="_blank"><i
+                                    class="fab fa-facebook-f"></i></a>
+
+                            <a href="https://www.instagram.com/caymanchromatic/" target="_blank"><i
+                                    class="fab fa-instagram"></i></a>
+                        </div>
+                    </li>
+                </ul>
+
+
+            </nav>
+
+        </div>
+    </div>
+
+
+    <!-- ---Desktop Top Menu--- -->
+    <div class="desktop-topbar">
+        <div class="nav-logo">
+            <div class="sidelogo">
+                <img width="250" src="images/Cayman-Chromatic-logo-navigation-white.svg"
+                    alt="Cayman Chromatic Underwater Photography Art logo">
+            </div>
+
+        </div>
+
+        <ul>
+            <li><a class="home mainmen" href="index.html">Home</a></li>
+            <li>
+                <div class="dropdown">
+                    <a class="gal-btn mainmen" onclick="myFunction()">Gallery
+                        <span class="fas fa-chevron-down rotate"></span>
+                    </a>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a class="pink" href="gallery-chromatic-2.html">Chromatic Series 2</a>
+                        <a class="blue" href="gallery-chromatic-1.html">Chromatic Series 1</a>
+                        <a class="bw" href="gallery-monochromatic.html">Monhochromatic</a>
+                    </div>
+                </div>
+            </li>
+            <li><a class="store mainmen" href="store.html">Store</a></li>
+            <li><a class="about mainmen" href="#">About</a></li>
+            <li><a class="contact mainmen" href="#">Contact</a></li>
+            <li><a href="https://www.facebook.com/caymanchromatic" target="_blank"><i
+                        class="fab fa-social fa-facebook-f"></i></a></li>
+            <li><a href="https://www.instagram.com/caymanchromatic/" target="_blank"><i
+                        class="fab fa-social fa-instagram"></i></a></li>
+        </ul>
+
+    </div>
+
+    <!-- ---Store header--- -->
+    <div class="store-front">
+        <div class="store-header">
+            <p class="slide-down">Add a splash of <span>life</span> to your walls.</p>
+        </div>
+
+        <div class="scroll-down">
+            <a href="#find-your-art"><i class="fas fa-chevron-down"></i></a>
+        </div>
+
+        <div class="parallax"></div>
+    </div>
+
+
+    <div class="container" id="find-your-art">
+        <h1>Find your perfect Chromatic artwork</h1>
+
+        <!-- ---Store Sidebar--- -->
+        <div class="sidebar">
+            <h2>Filters</h2>
+            <h3>Art Series</h3>
+            <div id="artSeriesBtn">
+                <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                <button class="btn chrom2" onclick="filterSelection('col2')">Chromatic 2</button>
+                <button class="btn chrom1" onclick="filterSelection('col1')">Chromatic 1</button>
+                <button class="btn mono" onclick="filterSelection('col-mono')"> Monochromatic</button>
+            </div>
+
+            <h3>Featured Colors</h3>
+            <div id="colorBtn">
+                <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+                <button class="btn red" onclick="filterSelection('col-red')">Red</button>
+                <button class="btn orange" onclick="filterSelection('col-orange')">Orange</button>
+                <button class="btn yellow" onclick="filterSelection('col-yellow')"> Yellow</button>
+                <button class="btn green" onclick="filterSelection('col-green')">Green</button>
+                <button class="btn turquoise" onclick="filterSelection('turquoise')">Turquoise</button>
+                <button class="btn blue" onclick="filterSelection('col-blue')"> Blue</button>
+                <button class="btn purple" onclick="filterSelection('col-purple')">Purple</button>
+                <button class="btn pink" onclick="filterSelection('col-pink')">Pink</button>
+                <button class="btn bw" onclick="filterSelection('col-mono')"> B&W</button>
+            </div>
+
+        </div>
+
+        <!-- ---Store Section--- -->
+        <section id="store-section">
+
+            <div class="card-section">
+                <div class="card-grid">
+
+                    <!-- ---Chromatic Series 2--- -->
+                    <div class="item col2 col-red col-blue">
+                        <div class="info">
+                            <img src="gallery2/TN/Cayman-Chromatic-Art-S2-Web-Starfish-1.jpg">
+                            <strong class="title">Starfish - 1</strong>
+                            <strong class="series">Chromatic-2</strong>
+                            <p class="desc">The Red Cushion Starfish is the largest sea star found within its range,
+                                sometimes growing to about 50 centimetres in diameter.</p>
+                            <button class="purchase-btn">Select purchase options</button>
+                        </div>
+                    </div>
+
+                    <div class="item col2 col-turquoise col-orange">
+                        <div class="info">
+                            <img src="gallery2/TN/Cayman-Chromatic-Art-S2-Web-Seahorse-2.jpg">
+                            <strong class="title">Caribbean Seahorse - 1</strong>
+                            <strong class="series">Chromatic-2</strong>
+                            <p class="desc">Seahorses are fish that swim upright. Their elongated faces give a
+                                horse-like appearance. Their bodies are covered with bony plates for protection.</p>
+                            <button class="purchase-btn">Select purchase options</button>
+                        </div>
+
+                    </div>
+
+                    <div class="item col2 col-orange col-yellow col-purple">
+                        <div class="info">
+                            <img src="gallery2/TN/Cayman-Chromatic-Art-S2-Web-Fish.jpg">
+                            <strong class="title">Bicolor Damselfish</strong>
+                            <strong class="series">Chromatic-2</strong>
+                            <p class="desc">The Bicolor Damselfish get their name from the contrasting dark-coloured
+                                front body and light-colored back body, usually a yellow stripe or patch in the middle.
+                            </p>
+                            <button class="purchase-btn">Select purchase options</button>
+                        </div>
+
+                    </div>
+
+                    <div class="item info col2 col-turquoise col-yellow">
+                        <div class="">
+                            <img src="gallery2/TN/Cayman-Chromatic-Art-S2-Web-Shrimp.jpg">
+                            <strong class="title">Pistol Snapping Shrimp</strong>
+                            <strong class="series">Chromatic-2</strong>
+                            <p class="desc">Pistol Snapping Shrimps have a disproportionately large claw, used with an
+                                incredibly fast, pistol-like snap that creates a cavitation bubble loud enough to stun,
+                                or even kill their prey.</p>
+                            <button class="purchase-btn">Select purchase options</button>
+                        </div>
+
+                    </div>
+
+                    <div class="item col2 col-orange col-pink">
+                        <div class="info">
+                            <img src="gallery2/TN/Cayman-Chromatic-Art-S2-Web-Searods-2.jpg">
+                            <strong class="title">Caribbean Sea Whip - 3</strong>
+                            <strong class="series">Chromatic-2</strong>
+                            <p class="desc">The Caribbean Sea Whip is a coral specie covered in tiny, branch like
+                                tentacles which are used to sting and capture swimming plankton as its primary food
+                                source.</p>
+                            <button class="purchase-btn">Select purchase options</button>
+                        </div>
+
+                    </div>
+
+                    <div class="item col2 col-blue col-orange">
+                        <div class="info">
+                            <img src="gallery2/TN/Cayman-Chromatic-Art-S2-Web-Starfish-3.jpg">
+                            <strong class="title">Red Cushion Sea Star - 2</strong>
+                            <strong class="series">Chromatic-2</strong>
+                            <p class="desc">The Red Cushion Starfish is the largest sea star found within its range,
+                                sometimes growing to about 50 centimetres in diameter.</p>
+                            <button class="purchase-btn">Select purchase options</button>
+                        </div>
+                    </div>
+
+                    <div class="item col2 col-purple">
+                        <div class="info">
+                            <img src="gallery2/TN/Cayman-Chromatic-Art-S2-Web-Seahorse-1.jpg">
+                            <strong class="title">Caribbean Seahorse - 2</strong>
+                            <strong class="series">Chromatic-2</strong>
+                            <p class="desc">Seahorses are fish that swim upright. Their elongated faces give a
+                                horse-like appearance. Their bodies are covered with bony plates for protection.</p>
+                            <button class="purchase-btn">Select purchase options</button>
+                        </div>
+                    </div>
+
+                    <div class="item col2 col-yellow col-turquoise">
+                        <div class="info">
+                            <img src="gallery2/TN/Cayman-Chromatic-Art-S2-Web-Turtle.jpg">
+                            <strong class="title">Hawksbill Sea Turtle</strong>
+                            <strong class="series">Chromatic-2</strong>
+                            <p class="desc">Distinguished by its Hawk-like overhanging upper beak, The Hawksbill Sea
+                                Turtle can also be identified for their distinctive shell pattern which makes them
+                                highly-valuable and commonly sold at markets as tortoiseshell.</p>
+                            <button class="purchase-btn">Select purchase options</button>
+                        </div>
+                    </div>
+
+                    <div class="item col2 col-turquoise col-orange">
+                        <div class="info">
+                            <img src="gallery2/TN/Cayman-Chromatic-Art-S2-Web-Worm.jpg">
+                            <strong class="title">Red Spotted Horseshoe Worm</strong>
+                            <strong class="series">Chromatic-2</strong>
+                            <p class="desc">These worms build upright tubes to support and protect their soft bodies.The
+                                bottom end of the body anchors the animal in the tube.</p>
+                            <button class="purchase-btn">Select purchase options</button>
+                        </div>
+                    </div>
+
+                    <div class="item col2 col-pink col-turquoise col-purple">
+                        <div class="info">
+                            <img src="gallery2/TN/Cayman-Chromatic-Art-S2-Web-Searods-3.jpg">
+                            <strong class="title">Caribbean Sea Whip - 2</strong>
+                            <strong class="series">Chromatic-2</strong>
+                            <p class="desc">The Caribbean Sea Whip is a coral specie covered in tiny, branch like
+                                tentacles which are used to sting and capture swimming plankton as its primary food
+                                source.</p>
+                            <button class="purchase-btn">Select purchase options</button>
+                        </div>
+                    </div>
+
+                    <div class="item col2 col-orange col-turquoise">
+                        <div class="info">
+                            <img src="gallery2/TN/Cayman-Chromatic-Art-S2-Web-Hermit.jpg">
+                            <strong class="title">Hermit Crab</strong>
+                            <strong class="series">Chromatic-2</strong>
+                            <p class="desc">Vigorous competition often occurs amongst Hermit Crabs for shells, as they
+                                require larger shells when they grow.</p>
+                            <button class="purchase-btn">Select purchase options</button>
+                        </div>
+                    </div>
+
+                    <div class="item col2 col-red col-turquoise col-yellow col-green">
+                        <div class="info">
+                            <img src="gallery2/TN/Cayman-Chromatic-Art-S2-Web-Anemone.jpg">
+                            <strong class="title">Beaded Anemone</strong>
+                            <strong class="series">Chromatic-2</strong>
+                            <p class="desc">Sea Anemones are a group of predatory animals. They are named after the
+                                anemone, a flowering plant, because of the colourful appearance of many.</p>
+                            <button class="purchase-btn">Select purchase options</button>
+                        </div>
+                    </div>
+
+                    <div class="item col2 col-pink col-orange col-blue">
+                        <div class="info">
+                            <img src="gallery2/TN/Cayman-Chromatic-Art-S2-Web-Starfish-2.jpg">
+                            <strong class="title">Red Cushion Sea Star - 3</strong>
+                            <strong class="series">Chromatic-2</strong>
+                            <p class="desc">The Red Cushion Starfish is the largest sea star found within its range,
+                                sometimes growing to about 50 centimetres in diameter.</p>
+                            <button class="purchase-btn">Select purchase options</button>
+                        </div>
+                    </div>
+
+                    <div class="item col2 col-green col-purple">
+                        <div class="info">
+                            <img src="gallery2/TN/Cayman-Chromatic-Art-S2-Web-Coral.jpg">
+                            <strong class="title">Great Star Coral</strong>
+                            <strong class="series">Chromatic-2</strong>
+                            <p class="desc">Great Star Coral has bulbous, puffy corallites and grows in bright,
+                                eye-catching colors. It forms massive colonies and boulders, which can be flat or domed.
+                            </p>
+                            <button class="purchase-btn">Select purchase options</button>
+                        </div>
+                    </div>
+
+                    <div class="item col2 col-pink col-green col-orange">
+                        <div class="info">
+                            <img src="gallery2/TN/Cayman-Chromatic-Art-S2-Web-Eel.jpg">
+                            <strong class="title">Goldentail Moray Eel</strong>
+                            <strong class="series">Chromatic-2</strong>
+                            <p class="desc">Moray Eels are nocturnal and hunt mostly at night, using their sense of
+                                smell to make up for their poor eyesight.</p>
+                            <button class="purchase-btn">Select purchase options</button>
+                        </div>
+                    </div>
+
+                    <div class="item col2 col-orange col-turquoise col-pink">
+                        <div class="info">
+                            <img src="gallery2/TN/Cayman-Chromatic-Art-S2-Web-Searods-1.jpg">
+                            <strong class="title">Caribbean Sea Whip - 3</strong>
+                            <strong class="series">Chromatic-2</strong>
+                            <p class="desc">The Caribbean Sea Whip is a coral specie covered in tiny, branch like
+                                tentacles which are used to sting and capture swimming plankton as its primary food
+                                source.</p>
+                            <button class="purchase-btn">Select purchase options</button>
+                        </div>
+                    </div>
+
+
+
+
+                    <!-- ---Chromatic Series 1--- -->
+                    <div class="item col1 col-yellow col-blue">
+                        <div class="info">
+                            <img src="gallery1/TN/Cayman-Chromatic-Art-S1-Web-Squid-1.jpg">
+                            <strong class="title">Caribbean Reef Squid - 1</strong>
+                            <strong class="series">Chromatic-1</strong>
+                            <p class="desc">Caribbean Reef Squid is a delight for photographers. Their translucent body
+                                reflects light and they don't shy away from the camera.</p>
+                            <button class="purchase-btn">Select purchase options</button>
+                        </div>
+                    </div>
+
+                    <div class="item col1 col-turquoise col-orange col-blue col-red">
+                        <div class="info">
+                            <img src="gallery1/TN/Cayman-Chromatic-Art-S1-Spotted-Drum-Fish.jpg">
+                            <strong class="title">Juvenile Spotted Drum Fish</strong>
+                            <strong class="series">Chromatic-1</strong>
+                            <p class="desc">The name ”Drum” was given because drum fish can make a low resonance noise
+                                similar to the beating of the drum, by beating their abdominal muscle against the swim
+                                bladder.</p>
+                            <button class="purchase-btn">Select purchase options</button>
+                        </div>
+
+                    </div>
+
+                    <div class="item col1 col-orange col-yellow col-turquoise">
+                        <div class="info">
+                            <img src="gallery1/TN/Cayman-Chromatic-Art-S1-Flamingo-Tongue-1.jpg">
+                            <strong class="title">Flamingo Tongue Seaslug - 1</strong>
+                            <strong class="series">Chromatic-1</strong>
+                            <p class="desc">Flamingo Tongue Seaslug is one of Cayman's most recognizable and interesting
+                                sea-snails.</p>
+                            <button class="purchase-btn">Select purchase options</button>
+                        </div>
+
+                    </div>
+
+                    <div class="item col1 col-blue col-purple col-green">
+                        <div class="info">
+                            <img src="gallery1/TN/Cayman-Chromatic-Art-S1-Coral-1.jpg">
+                            <strong class="title">Great Star Coral - 1</strong>
+                            <strong class="series">Chromatic-1</strong>
+                            <p class="desc">Great Star Coral has bulbous, puffy corallites and grows in bright,
+                                eye-catching colors.</p>
+                            <button class="purchase-btn">Select purchase options</button>
+                        </div>
+
+                    </div>
+
+                    <div class="item col1 col-turquoise col-purple">
+                        <div class="info">
+                            <img src="gallery1/TN/Cayman-Chromatic-Art-S1-Pike-Blenny-Fish.jpg">
+                            <strong class="title">Yellowface Pikeblenny Fish</strong>
+                            <strong class="series">Chromatic-1</strong>
+                            <p class="desc">Yellowface Pikeblenny Fish are also called tube blenny because they often
+                                make their nests in abandoned worm tubes on sand ground.</p>
+                            <button class="purchase-btn">Select purchase options</button>
+                        </div>
+                    </div>
+
+                    <div class="item col1 col-turquoise col-red">
+                        <div class="info">
+                            <img src="gallery1/TN/Cayman-Chromatic-Art-S1-Feather-Duster-Worm.jpg">
+                            <strong class="title">Social Feather Duster Worm</strong>
+                            <strong class="series">Chromatic-1</strong>
+                            <p class="desc">Social Feather Duster Worms use their secrete mucus to build a long,
+                                parchment-like tube to live in, and they stick their head out which has clusters of
+                                branched tentacles attached to the sides.</p>
+                            <button class="purchase-btn">Select purchase options</button>
+                        </div>
+                    </div>
+
+                    <div class="item col1 col-yellow col-blue">
+                        <div class="info">
+                            <img src="gallery1/TN/Cayman-Chromatic-Art-S1-File-Fish.jpg">
+                            <strong class="title">Juvenile Slender Filefish</strong>
+                            <strong class="series">Chromatic-1</strong>
+                            <p class="desc">Slender Filefish are a regular feature of the Caribbean coral reef. They are
+                                very small and their markings provide great camouflage</p>
+                            <button class="purchase-btn">Select purchase options</button>
+                        </div>
+                    </div>
+
+                    <div class="item col1 col-purple col-green">
+                        <div class="info">
+                            <img src="gallery1/TN/Cayman-Chromatic-Art-S1-Cleaner-Shrimp.jpg">
+                            <strong class="title">Pederson Cleaner Shrimp</strong>
+                            <strong class="series">Chromatic-1</strong>
+                            <p class="desc">Cleaner Shrimp offer cleaning services to passing fish. Fish visiting the
+                                cleaning station will remain stationary while their external parasites are removed and
+                                eaten by the shrimp.</p>
+                            <button class="purchase-btn">Select purchase options</button>
+                        </div>
+                    </div>
+
+                    <div class="item col1 col-orange col-blue col-red">
+                        <div class="info">
+                            <img src="gallery1/TN/Cayman-Chromatic-Art-S1-Snapper-Fish-1.jpg">
+                            <strong class="title">Mutton Snapper Fish - 1</strong>
+                            <strong class="series">Chromatic-1</strong>
+                            <p class="desc">Mutton Snapper Fish is a highly prized fish by saltwater anglers. Its flesh
+                                is considered excellent table fare. It tends to live a solitary life, but can be seen in
+                                smaller schools.</p>
+                            <button class="purchase-btn">Select purchase options</button>
+                        </div>
+                    </div>
+
+                    <div class="item col1 col-turquoise col-orange">
+                        <div class="info">
+                            <img src="gallery1/TN/Cayman-Chromatic-Art-S1-Flamingo-Tongue-2.jpg">
+                            <strong class="title">Flamingo Tongue Seaslug - 2</strong>
+                            <strong class="series">Chromatic-1</strong>
+                            <p class="desc">Flamingo Tongue Seaslug is one of Cayman's most recognizable and interesting
+                                sea-snails. Their unique shell is on average 1 inch long and the vibrant colors are
+                                actually on the mantle that covers the shell.</p>
+                            <button class="purchase-btn">Select purchase options</button>
+                        </div>
+                    </div>
+
+                    <div class="item col1 col-blue col-orange col-turquoise">
+                        <div class="info">
+                            <img src="gallery1/TN/Cayman-Chromatic-Art-S1-Lettuce-Seaslug.jpg">
+                            <strong class="title">Lettuce Sea Slug</strong>
+                            <strong class="series">Chromatic-1</strong>
+                            <p class="desc">Lettuce Sea Slug has its name because it is often green in color, and it has
+                                very frilly edge which makes it resemble lettuce leaves.</p>
+                            <button class="purchase-btn">Select purchase options</button>
+                        </div>
+                    </div>
+
+                    <div class="item col1 col-orange col-turquoise">
+                        <div class="info">
+                            <img src="gallery1/TN/Cayman-Chromatic-Art-S1-Coral-2.jpg">
+                            <strong class="title">Great Star Coral - 2</strong>
+                            <strong class="series">Chromatic-1</strong>
+                            <p class="desc">Great Star Coral has bulbous, puffy corallites and grows in bright,
+                                eye-catching colors. It forms massive colonies and boulders, which can be flat or domed.
+                            </p>
+                            <button class="purchase-btn">Select purchase options</button>
+                        </div>
+                    </div>
+
+                    <div class="item col1 col-turquoise col-orange">
+                        <div class="info">
+                            <img src="gallery1/TN/Cayman-Chromatic-Art-S1-Olive-Seasnail.jpg">
+                            <strong class="title">Netted Olive Sea Snail</strong>
+                            <strong class="series">Chromatic-1</strong>
+                            <p class="desc">Olive snails are carnivorous sand-burrowers. They feed mostly on small shell
+                                creatures and are known as some of the fastest burrowers among snails.</p>
+                            <button class="purchase-btn">Select purchase options</button>
+                        </div>
+                    </div>
+
+                    <div class="item col1 col-yellow col-blue col-red">
+                        <div class="info">
+                            <img src="gallery1/TN/Cayman-Chromatic-Art-S1-Snapper-Fish-2.jpg">
+                            <strong class="title">Mutton Snapper Fish - 2</strong>
+                            <strong class="series">Chromatic-1</strong>
+                            <p class="desc">Mutton Snapper Fish is a highly prized fish by saltwater anglers. Its flesh
+                                is considered excellent table fare. It tends to live a solitary life, but can be seen in
+                                smaller schools.</p>
+                            <button class="purchase-btn">Select purchase options</button>
+                        </div>
+                    </div>
+
+                    <div class="item col1 col-yellow col-pink">
+                        <div class="info">
+                            <img src="gallery1/TN/Cayman-Chromatic-Art-S1-Web-Squid-2.jpg">
+                            <strong class="title">Caribbean Reef Squid - 2</strong>
+                            <strong class="series">Chromatic-1</strong>
+                            <p class="desc">The Bicolor Damselfish get their name from the contrasting dark-coloured
+                                front body and light-colored back body, usually a yellow stripe or patch in the middle.
+                            </p>
+                            <button class="purchase-btn">Select purchase options</button>
+                        </div>
+
+                    </div>
+
+                    <div class="item col1 col-blue col-yellow col-orange col-turquoise">
+                        <div class="info">
+                            <img src="gallery1/TN/Cayman-Chromatic-Art-S1-Flamingo-Tongue-3.jpg">
+                            <strong class="title">Flamingo Tongue Seaslug - 3</strong>
+                            <strong class="series">Chromatic-1</strong>
+                            <p class="desc">Flamingo Tongue Seaslug is one of Cayman's most recognizable and interesting
+                                sea-snails. Their unique shell is on average 1 inch long and the vibrant colors are
+                                actually on the mantle that covers the shell.</p>
+                            <button class="purchase-btn">Select purchase options</button>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <!-- ---Monohromatic Series--- -->
+                    <div class="item col-mono">
+                        <div class="info">
+                            <img src="gallery3/TN/Cayman-Chromatic-Art-S3-Squid-4.jpg">
+                            <strong class="title">Caribbean Reef Squid - 3</strong>
+                            <strong class="series">Chromatic-1</strong>
+                            <p class="desc">Caribbean Reef Squid is a delight for photographers. Their translucent body
+                                reflects light and they don't shy away from the camera.</p>
+                            <button class="purchase-btn">Select purchase options</button>
+                        </div>
+                    </div>
+
+                    <div class="item col-mono">
+                        <div class="info">
+                            <img src="gallery3/TN/Cayman-Chromatic-Art-S3-Silder-Sides.jpg">
+                            <strong class="title">Atlantic Silverside</strong>
+                            <strong class="series">Monochromatic</strong>
+                            <p class="desc"></p>
+                            <button class="purchase-btn">Select purchase options</button>
+                        </div>
+                    </div>
+
+                    <div class="item col-mono">
+                        <div class="info">
+                            <img src="gallery3/TN/Cayman-Chromatic-Art-S3-Stingray.jpg">
+                            <strong class="title">Southern Stingray</strong>
+                            <strong class="series">Monochromatic</strong>
+                            <p class="desc"></p>
+                            <button class="purchase-btn">Select purchase options</button>
+                        </div>
+                    </div>
+
+                    <div class="item col-mono">
+                        <div class="info">
+                            <img src="gallery3/TN/Cayman-Chromatic-Art-S3-Lion-Fish.jpg">
+                            <strong class="title">Red Lionfish</strong>
+                            <strong class="series">Monochromatic</strong>
+                            <p class="desc"></p>
+                            <button class="purchase-btn">Select purchase options</button>
+                        </div>
+                    </div>
+
+                    <div class="item col-mono">
+                        <div class="info">
+                            <img src="gallery3/TN/Cayman-Chromatic-Art-S3-Flamingo-Tongue-4.jpg">
+                            <strong class="title">Flamingo Tongue Seaslug - 4</strong>
+                            <strong class="series">Monochromatic</strong>
+                            <p class="desc">Flamingo Tongue Seaslug is one of Cayman's most recognizable and interesting
+                                sea-snails.</p>
+                            <button class="purchase-btn">Select purchase options</button>
+                        </div>
+                    </div>
+
+                    <div class="item col-mono">
+                        <div class="info">
+                            <img src="gallery3/TN/Cayman-Chromatic-Art-S3-Hydroid-1.jpg">
+                            <strong class="title">Solitary Hydroid - 1</strong>
+                            <strong class="series">Monochromatic</strong>
+                            <p class="desc"></p>
+                            <button class="purchase-btn">Select purchase options</button>
+                        </div>
+                    </div>
+
+                    <div class="item col-mono">
+                        <div class="info">
+                            <img src="gallery3/TN/Cayman-Chromatic-Art-S3-Fish.jpg">
+                            <strong class="title"></strong>
+                            <strong class="series">Monochromatic</strong>
+                            <p class="desc"></p>
+                            <button class="purchase-btn">Select purchase options</button>
+                        </div>
+                    </div>
+
+                    <div class="item col-mono">
+                        <div class="info">
+                            <img src="gallery3/TN/Cayman-Chromatic-Art-S3-Octopus.jpg">
+                            <strong class="title">Caribbean Reef Octopus</strong>
+                            <strong class="series">Monochromatic</strong>
+                            <p class="desc"></p>
+                            <button class="purchase-btn">Select purchase options</button>
+                        </div>
+                    </div>
+
+                    <div class="item col-mono">
+                        <div class="info">
+                            <img src="gallery3/TN/Cayman-Chromatic-Art-S3-Jelly-Fish.jpg">
+                            <strong class="title">Mangrove Upsidedown Jellyfish</strong>
+                            <strong class="series">Monochromatic</strong>
+                            <p class="desc"></p>
+                            <button class="purchase-btn">Select purchase options</button>
+                        </div>
+                    </div>
+
+                    <div class="item col-mono">
+                        <div class="info">
+                            <img src="gallery3/TN/Cayman-Chromatic-Art-S3-Hydroid-2.jpg">
+                            <strong class="title">Solitary Hydroid - 2</strong>
+                            <strong class="series">Monochromatic</strong>
+                            <p class="desc"></p>
+                            <button class="purchase-btn">Select purchase options</button>
+                        </div>
+                    </div>
+
+                    <div class="item col-mono">
+                        <div class="info">
+                            <img src="gallery3/TN/Cayman-Chromatic-Art-S3-Squid-5.jpg">
+                            <strong class="title">Caribbean Reef Squid - 3</strong>
+                            <strong class="series">Chromatic-1</strong>
+                            <p class="desc">Caribbean Reef Squid is a delight for photographers. Their translucent body
+                                reflects light and they don't shy away from the camera.</p>
+                        </div>
+                    </div>
+
+                    <div class="item col-mono">
+                        <div class="info">
+                            <img src="gallery3/TN/Cayman-Chromatic-Art-S3-Starfish-4.jpg">
+                            <strong class="title"></strong>
+                            <strong class="series">Monochromatic</strong>
+                            <p class="desc"></p>
+                            <button class="purchase-btn">Select purchase options</button>
+                        </div>
+                    </div>
+
+
+
+                </div>
+            </div>
+
+        </section>
+    </div>
+
+    <!-- <a href="https://www.freepik.com/free-photos-vectors/background">Background psd created by freepik -
+        www.freepik.com</a> -->
+
+    <footer>
+        <div class="footer-content">
+            <div class="backup">
+
+                <button onclick="topFunction()" id="footerBtn" title="Return to top">
+                    <i class="fas fa-angle-up"></i>
+                    Return to top</button>
+                
+            </div>
+
+            <div class="footer-logo-mob">
+                <img width="35" src="images/Cayman-Chromatic-logo-small-1.svg"
+                    alt="Cayman Chromatic Underwater Photography Art footer white logo">
+            </div>
+    
+            <div class="footer-logo-tab">
+                <img width="220" src="images/Cayman-Chromatic-logo-navigation-black-2.svg"
+                    alt="Cayman Chromatic Underwater Photography Art footer white logo">
+            </div>
+            
+            <a href="https://www.facebook.com/caymanchromatic" target="_blank"><i class="fab fa-social fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/caymanchromatic/" target="_blank"><i class="fab fa-social fa-instagram"></i></a>
+        </div>
+        
+    </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+    <script src="js/scripts.js" type="text/javascript"></script>
+    <script src="js/store.js"></script>
+
+</body>
+
+</html>

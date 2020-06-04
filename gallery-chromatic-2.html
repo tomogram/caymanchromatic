@@ -10,7 +10,7 @@
     <meta name="keywords"
         content="Cayman Chromatic Underwater Photography Art Cayman Islands Home Decor Gift Wallart Canvas Scuba Diving">
     <meta name="author" content="Thomas Williamson">
-    <title>Cayman Chromatic - Gallery ( Chromatic-2 ) | Underwater Photography Art from the Cayman Islands</title>
+    <title>Cayman Chromatic - Gallery ( Series-2 ) | Underwater Photography Art from the Cayman Islands</title>
 
     <link rel="shortcut icon" type="image/png" href="images/cayman-chromatic-favicon.png">
     <!-- Google Font -->
@@ -19,6 +19,7 @@
     <!-- Font Awesome Icons -->
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
+    <link rel="stylesheet" href="css/menus.css">
     <link rel="stylesheet" href="fancy-box/jquery.fancybox.css" />
     <link rel="stylesheet" href="css/gallery.css">
 </head>
@@ -40,204 +41,298 @@
         </div>
     </div>
 
+    <!-- Mobile Menu -->
+    <div class="mobile-topbar">
 
-    <!-- ---Side Menu--- -->
-    <div class="mob-wrapper">
+        <div class="mob-wrapper">
 
-        <nav class="mob-nav">
+            <nav class="mob-nav">
 
-            <div class="nav-logo">
-                <div class="sidelogo">
-                    <img width="270" src="images/Cayman-Chromatic-logo-navigation-white.svg"
-                        alt="Cayman Chromatic Underwater Photography Art logo">
+                <div class="nav-logo">
+                    <div class="sidelogo">
+                        <img width="270" src="images/Cayman-Chromatic-logo-navigation-white.svg"
+                            alt="Cayman Chromatic Underwater Photography Art logo">
+                    </div>
+
                 </div>
 
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a class="gal-btn">Gallery
+                            <span class="fas fa-plus rotate"></span>
+                        </a>
+                        <ul class="gal-show">
+                            <li><a href="gallery-chromatic-2.html">Chromatic Series 2</a></li>
+                            <li><a href="gallery-chromatic-1.html">Chromatic Series 1</a></li>
+                            <li><a href="gallery-monochromatic.html">Monochromatic Art</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="store.html">Store</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li>
+                        <div class="social-mob">
+                            <a href="https://www.facebook.com/caymanchromatic" target="_blank"><i
+                                    class="fab fa-facebook-f"></i></a>
+
+                            <a href="https://www.instagram.com/caymanchromatic/" target="_blank"><i
+                                    class="fab fa-instagram"></i></a>
+                        </div>
+                    </li>
+                </ul>
+
+
+            </nav>
+
+        </div>
+    </div>
+
+    <!-- ---Desktop Top Menu--- -->
+    <div class="desktop-topbar">
+        <div class="nav-logo">
+            <div class="sidelogo">
+                <img width="250" src="images/Cayman-Chromatic-logo-navigation-black-2.svg"
+                    alt="Cayman Chromatic Underwater Photography Art logo">
             </div>
 
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li>
-                    <a href="#" class="gal-btn">Gallery
-                        <span class="fas fa-plus rotate"></span>
+        </div>
+
+        <ul>
+            <li><a class="home mainmen" href="index.html">Home</a></li>
+            <li>
+                <div class="dropdown">
+                    <a class="gal-btn mainmen" onclick="myFunction()">Gallery
+                        <span class="fas fa-chevron-down rotate"></span>
                     </a>
-                    <ul class="gal-show">
-                        <li><a href="gallery-chromatic-2.html">Chromatic Art</a></li>
-                        <li><a href="gallery-monochromatic.html">Monochromatic Art</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Store</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-                <li>
-                    <div class="social-mob">
-                        <a href="https://www.facebook.com/caymanchromatic" target="_blank"><i
-                                class="fab fa-facebook-f"></i></a>
-
-                        <a href="https://www.instagram.com/caymanchromatic/" target="_blank"><i
-                                class="fab fa-instagram"></i></a>
+                    <div id="myDropdown" class="dropdown-content">
+                      <a class="pink" href="gallery-chromatic-2.html">Chromatic Series 2</a>
+                      <a class="blue" href="gallery-chromatic-1.html">Chromatic Series 1</a>
+                      <a class="bw" href="gallery-monochromatic.html">Monhochromatic</a>
                     </div>
-                </li>
-            </ul>
-
-
-        </nav>
+                  </div>
+            </li>
+            <li><a class="store mainmen" href="store.html">Store</a></li>
+            <li><a class="about mainmen" href="#">About</a></li>
+            <li><a class="contact mainmen" href="#">Contact</a></li>
+            <li><a href="https://www.facebook.com/caymanchromatic" target="_blank"><i class="fab fa-social fa-facebook-f"></i></a></li>
+            <li><a href="https://www.instagram.com/caymanchromatic/" target="_blank"><i class="fab fa-social fa-instagram"></i></a></li>
+        </ul>
 
     </div>
+
 
 
     <div class="container">
         <!-- ---Gallery Top Menu--- -->
-        <div class="gallery-title">
-            <ul>
-                <li><a class="chromatic-link active-page" href="gallery-chromatic-2.html">Chromatic Series 2</a></li>
-                <li><a class="chromatic-link2" href="gallery-chromatic-1.html">Chromatic Series 1</a></li>
-                <li><a class="monochromatic-link" href="gallery-monochromatic.html">Monochromatic</a></li>
-            </ul>
+        <div class="gallery-title-mob">
+
+
+            <div class="gallery-links">
+
+                <nav class="gallery-link-mob">
+                    <a class="chromatic-link active-page" href="gallery-chromatic-2.html">
+                        <div class="letter">Chrom 2</div>
+                    </a>
+
+                    <a class="chromatic-link2" href="gallery-chromatic-1.html">
+                        <div class="letter">Chrom 1</div>
+                    </a>
+
+                    <a class="monochromatic-link" href="gallery-monochromatic.html">
+                        <div class="letter">Monochrom</div>
+                    </a>
+                </nav>
+
+                <nav class="gallery-link-desktop">
+                    <a class="chromatic-link active-page" href="gallery-chromatic-2.html">
+                        <div class="letter">Chromatic Gallery 2</div>
+                    </a>
+
+                    <a class="chromatic-link2" href="gallery-chromatic-1.html">
+                        <div class="letter">Chromatic Gallery 1</div>
+                    </a>
+
+                    <a class="monochromatic-link" href="gallery-monochromatic.html">
+                        <div class="letter">Monochromatic</div>
+                    </a>
+                </nav>
+            </div>
         </div>
-    
-    
-        <!-- ---Gallery Description--- -->
+
+
+        <!-- ---Gallery--- -->
         <p class="imglist">
-    
+
             <a href="gallery2/WT/Cayman-Chromatic-Art-S2-Web-Starfish-1.jpg" data-fancybox="images"
                 data-caption="<h2 class='title_style'>Red Cushion Sea Star - 1</h2><p class='caption_style'>The Red Cushion Starfish is the largest sea star found within its range, sometimes growing to about 50 centimetres in diameter. It usually has five thick, broad arms projecting from a broad cushioned disc but some specimens have four, six or seven.</p> <a class='link_style' href='#'>See pricing options</a>">
-    
+
                 <img class="thumbnail-fade" src="gallery2/TN/Cayman-Chromatic-Art-S2-Web-Starfish-1.jpg"
                     alt="Red Cushion Sea Star Starfish Cayman Chromatic Art">
-    
-    
+
+
             </a>
-    
+
             <a href="gallery2/WT/Cayman-Chromatic-Art-S2-Web-Seahorse-2.jpg" data-fancybox="images"
-                data-caption="<h2 class='title_style'>Caribbean Seahorse - 1</h2><p class='caption_style'>Seahorses are fish that swim upright. Their elongated faces give a horse-like appearance.Their bodies are covered with bony plates for protection and the coronet at the top of their heads is as unique to each seahorse as a thumbprint is to a human.</p> <a class='link_style' href='#'>See pricing options</a>">
-    
+                data-caption="<h2 class='title_style'>Caribbean Seahorse - 1</h2><p class='caption_style'>Seahorses are fish that swim upright. Their elongated faces give a horse-like appearance. Their bodies are covered with bony plates for protection and the coronet at the top of their heads is as unique to each seahorse as a thumbprint is to a human.</p> <a class='link_style' href='#'>See pricing options</a>">
+
                 <img class="thumbnail-fade" src="gallery2/TN/Cayman-Chromatic-Art-S2-Web-Seahorse-2.jpg"
                     alt="Caribbean Seahorse Cayman Chromatic Art">
             </a>
-    
+
             <a href="gallery2/WT/Cayman-Chromatic-Art-S2-Web-Fish.jpg" data-fancybox="images"
                 data-caption="<h2 class='title_style'>Bicolor Damselfish</h2><p class='caption_style'>The Bicolor Damselfish get their name from the contrasting dark-coloured front body and light-colored back body, usually a yellow stripe or patch in the middle. They gather in groups of up to twenty individuals and defend their reef territories.</p> <a class='link_style' href='#'>See pricing options</a>">
-    
+
                 <img class="thumbnail-fade" src="gallery2/TN/Cayman-Chromatic-Art-S2-Web-Fish.jpg"
                     alt="Bicolor Damselfish Cayman Chromatic Art">
             </a>
-    
+
             <a href="gallery2/WT/Cayman-Chromatic-Art-S2-Web-Shrimp.jpg" data-fancybox="images"
                 data-caption="<h2 class='title_style'>Pistol Snapping Shrimp</h2><p class='caption_style'>Pistol Snapping Shrimps have a disproportionately large claw, used with an incredibly fast, pistol-like snap that creates a cavitation bubble loud enough to stun, or even kill their prey. They usually keep their distance themselves to avoid accidentally snapping each other.</p> <a class='link_style' href='#'>See pricing options</a>">
-    
+
                 <img class="thumbnail-fade" src="gallery2/TN/Cayman-Chromatic-Art-S2-Web-Shrimp.jpg"
                     alt="Pistol Snapping Shrimp Cayman Chromatic Art">
             </a>
-    
+
             <a href="gallery2/WT/Cayman-Chromatic-Art-S2-Web-Searods-2.jpg" data-fancybox="images"
                 data-caption="<h2 class='title_style'>Caribbean Sea Whip - 3</h2><p class='caption_style'>The Black Sea Rod, otherwise known as Caribbean Sea Whip is a coral specie covered in tiny, branch like tentacles which are used to sting and capture swimming plankton as its primary food source. It has been used in beauty products due to its anti-inflammatory agents.</p> <a class='link_style' href='#'>See pricing options</a>">
-    
+
                 <img class="thumbnail-fade" src="gallery2/TN/Cayman-Chromatic-Art-S2-Web-Searods-2.jpg"
                     alt="Caribbean Sea Whip Searods Cayman Chromatic Art">
             </a>
-    
+
             <a href="gallery2/WT/Cayman-Chromatic-Art-S2-Web-Starfish-3.jpg" data-fancybox="images"
                 data-caption="<h2 class='title_style'>Red Cushion Sea Star - 2</h2><p class='caption_style'>The Red Cushion Starfish is the largest sea star found within its range, sometimes growing to about 50 centimetres in diameter. It usually has five thick, broad arms projecting from a broad cushioned disc but some specimens have four, six or seven.</p> <a class='link_style' href='#'>See pricing options</a>">
-    
+
                 <img class="thumbnail-fade" src="gallery2/TN/Cayman-Chromatic-Art-S2-Web-Starfish-3.jpg"
                     alt="Red Cushion Sea Star Starfish Cayman Chromatic Art">
             </a>
-    
+
             <a href="gallery2/WT/Cayman-Chromatic-Art-S2-Web-Seahorse-1.jpg" data-fancybox="images"
                 data-caption="<h2 class='title_style'>Caribbean Seahorse - 2</h2><p class='caption_style'>Seahorses are fish that swim upright. Their elongated faces give a horse-like appearance.Their bodies are covered with bony plates for protection and the coronet at the top of their heads is as unique to each seahorse as a thumbprint is to a human.</p> <a class='link_style' href='#'>See pricing options</a>">
-    
+
                 <img class="thumbnail-fade" src="gallery2/TN/Cayman-Chromatic-Art-S2-Web-Seahorse-1.jpg"
                     alt="Caribbean Seahorse Cayman Chromatic Art">
             </a>
-    
+
             <a href="gallery2/WT/Cayman-Chromatic-Art-S2-Web-Turtle.jpg" data-fancybox="images"
                 data-caption="<h2 class='title_style'>Hawksbill Sea Turtle</h2><p class='caption_style'>Distinguished by its Hawk-like overhanging upper beak, The Hawksbill Sea Turtle can also be identified for their distinctive shell pattern which makes them highly-valuable and commonly sold at markets as tortoiseshell.</p> <a class='link_style' href='#'>See pricing options</a>">
-    
+
                 <img class="thumbnail-fade" src="gallery2/TN/Cayman-Chromatic-Art-S2-Web-Turtle.jpg"
                     alt="Hawksbill Sea Turtle Cayman Chromatic Art">
             </a>
-    
+
             <a href="gallery2/WT/Cayman-Chromatic-Art-S2-Web-Worm.jpg" data-fancybox="images"
                 data-caption="<h2 class='title_style'>Red Spotted Horseshoe Worm</h2><p class='caption_style'>These worms build upright tubes to support and protect their soft bodies.The bottom end of the body anchors the animal in the tube. When the lophophore is extended at the top of the body, little hairs on the sides of the tentacles draw food particles to the mouth.</p> <a class='link_style' href='#'>See pricing options</a>">
-    
+
                 <img class="thumbnail-fade" src="gallery2/TN/Cayman-Chromatic-Art-S2-Web-Worm.jpg"
                     alt="Red Spotted Horseshoe Worm Cayman Chromatic Art">
             </a>
-    
+
             <a href="gallery2/WT/Cayman-Chromatic-Art-S2-Web-Searods-3.jpg" data-fancybox="images"
                 data-caption="<h2 class='title_style'>Caribbean Sea Whip - 2</h2><p class='caption_style'>The Black Sea Rod, otherwise known as Caribbean Sea Whip is a coral specie covered in tiny, branch like tentacles which are used to sting and capture swimming plankton as its primary food source. It has been used in beauty products due to its anti-inflammatory agents.</p> <a class='link_style' href='#'>See pricing options</a>">
-    
+
                 <img class="thumbnail-fade" src="gallery2/TN/Cayman-Chromatic-Art-S2-Web-Searods-3.jpg"
                     alt="Caribbean Sea Whip Searods Cayman Chromatic Art">
             </a>
-    
+
             <a href="gallery2/WT/Cayman-Chromatic-Art-S2-Web-Hermit.jpg" data-fancybox="images"
                 data-caption="<h2 class='title_style'>Hermit Crab</h2><p class='caption_style'>Vigorous competition often occurs amongst Hermit Crabs for shells, as they require larger shells when they grow. Hermit crabs with too-small shells cannot grow as fast as those with well-fitting ones, and are more likely to be eaten if they cannot retract completely into their shell.</p> <a class='link_style' href='#'>See pricing options</a>">
-    
+
                 <img class="thumbnail-fade" src="gallery2/TN/Cayman-Chromatic-Art-S2-Web-Hermit.jpg"
                     alt="Hermit Crab Cayman Chromatic Art">
             </a>
-    
+
             <a href="gallery2/WT/Cayman-Chromatic-Art-S2-Web-Anemone.jpg" data-fancybox="images"
                 data-caption="<h2 class='title_style'>Beaded Anemone</h2><p class='caption_style'>Sea Anemones are a group of predatory animals. They are named after the anemone, a flowering plant, because of the colourful appearance of many. A typical sea anemone is a single polyp attached to a hard surface by its base, but some species live in soft sediment.</p> <a class='link_style' href='#'>See pricing options</a>">
-    
+
                 <img class="thumbnail-fade" src="gallery2/TN/Cayman-Chromatic-Art-S2-Web-Anemone.jpg"
                     alt="Beaded Anemone Cayman Chromatic Art">
             </a>
-    
+
             <a href="gallery2/WT/Cayman-Chromatic-Art-S2-Web-Starfish-2.jpg" data-fancybox="images"
                 data-caption="<h2 class='title_style'>Red Cushion Sea Star - 3</h2><p class='caption_style'>The Red Cushion Starfish is the largest sea star found within its range, sometimes growing to about 50 centimetres in diameter. It usually has five thick, broad arms projecting from a broad cushioned disc but some specimens have four, six or seven.</p> <a class='link_style' href='#'>See pricing options</a>">
-    
+
                 <img class="thumbnail-fade" src="gallery2/TN/Cayman-Chromatic-Art-S2-Web-Starfish-2.jpg"
                     alt="Red Cushion Sea Star Starfish Cayman Chromatic Art">
             </a>
-    
+
             <a href="gallery2/WT/Cayman-Chromatic-Art-S2-Web-Coral.jpg" data-fancybox="images"
                 data-caption="<h2 class='title_style'>Great Star Coral - 3</h2><p class='caption_style'>Great Star Coral has bulbous, puffy corallites and grows in bright, eye-catching colors. It forms massive colonies and boulders, which can be flat or domed. Its polyps are the size of a human thumb and are fully extend at night.</p> <a class='link_style' href='#'>See pricing options</a>">
-    
+
                 <img class="thumbnail-fade" src="gallery2/TN/Cayman-Chromatic-Art-S2-Web-Coral.jpg"
                     alt="Great Star Coral Cayman Chromatic Art">
             </a>
-    
+
             <a href="gallery2/WT/Cayman-Chromatic-Art-S2-Web-Eel.jpg" data-fancybox="images"
                 data-caption="<h2 class='title_style'>Goldentail Moray Eel</h2><p class='caption_style'>Moray Eels are nocturnal and hunt mostly at night, using their sense of smell to make up for their poor eyesight. Morays are known to be hermaphroditic, some swapping from Male to Female, and others have both functional testes and ovaries at the same time.</p> <a class='link_style' href='#'>See pricing options</a>">
-    
+
                 <img class="thumbnail-fade" src="gallery2/TN/Cayman-Chromatic-Art-S2-Web-Eel.jpg"
                     alt="Goldentail Moray Eel Cayman Chromatic Art">
             </a>
-    
+
             <a href="gallery2/WT/Cayman-Chromatic-Art-S2-Web-Searods-1.jpg" data-fancybox="images"
                 data-caption="<h2 class='title_style'>Caribbean Sea Whip - 3</h2><p class='caption_style'>The Black Sea Rod, otherwise known as Caribbean Sea Whip is a coral specie covered in tiny, branch like tentacles which are used to sting and capture swimming plankton as its primary food source. It has been used in beauty products due to its anti-inflammatory agents.</p> <a class='link_style' href='#'>See pricing options</a>">
-    
+
                 <img class="thumbnail-fade" src="gallery2/TN/Cayman-Chromatic-Art-S2-Web-Searods-1.jpg"
                     alt="Caribbean Sea Whip Searods Cayman Chromatic Art">
             </a>
-    
+
         </p>
-    
+
         
         <!-- ---Gallery Description--- -->
         <div class="gallery-description">
             <h1>About Cayman Chromatic Series 2</h1>
-    
-            <p>"After completeing our first collection of artworks we had a better idea of what kind of photographs worked
-                best for maniuplating into colourful, vibrant art works. We had also spent a lot more time scuba diving,
-                exporling the reefs surrounding Grand Cayman and finding all sorts of beautiful and interesting lifeforms
-                like Seahorses, Anemones, Pistol Snapping Shrimp and one of Cayman's most chershed sea creatures - the
+
+            <p>"After completeing our first collection of artworks we had a better idea of what kind of photographs
+                worked
+                best for maniuplating into colourful, vibrant art works. We had also spent a lot more time scuba
+                diving,
+                exporling the reefs surrounding Grand Cayman and finding all sorts of beautiful and interesting
+                lifeforms
+                like Seahorses, Anemones, Pistol Snapping Shrimp and one of Cayman's most chershed sea creatures -
+                the
                 Hawksbill Turtle.
             </p>
-    
-            <p>Our artistic direction also developed, and we went for a more pastel toned, colour palette. We used more
-                colours like pinks, oranges and purples and in many cases tried to create cleaner looking images with less
+
+            <p>Our artistic direction also developed, and we went for a more pastel toned, colour palette. We used
+                more
+                colours like pinks, oranges and purples and in many cases tried to create cleaner looking images
+                with less
                 mess to clutter to distract from the subject of the image."</p>
         </div>
     </div>
 
+    <footer>
+        <div class="footer-content">
+            <div class="backup">
+
+                <button onclick="topFunction()" id="footerBtn" title="Return to top">
+                    <i class="fas fa-angle-up"></i>
+                    Return to top</button>
+                
+            </div>
+
+            <div class="footer-logo-mob">
+                <img width="35" src="images/Cayman-Chromatic-logo-small-1.svg"
+                    alt="Cayman Chromatic Underwater Photography Art footer white logo">
+            </div>
+    
+            <div class="footer-logo-tab">
+                <img width="220" src="images/Cayman-Chromatic-logo-navigation-black-2.svg"
+                    alt="Cayman Chromatic Underwater Photography Art footer white logo">
+            </div>
+            
+            <a href="https://www.facebook.com/caymanchromatic" target="_blank"><i class="fab fa-social fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/caymanchromatic/" target="_blank"><i class="fab fa-social fa-instagram"></i></a>
+        </div>
+        
+    </footer>
 
     <!-- Javascript -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
     <script src="fancy-box/jquery.fancybox.js" type="text/javascript"></script>
-    <!-- <script src="node_modules/swup/dist/swup.min.js"></script> -->
     <script src="js/scripts.js" type="text/javascript"></script>
 
 </body>

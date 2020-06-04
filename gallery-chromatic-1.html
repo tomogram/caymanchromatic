@@ -10,7 +10,7 @@
     <meta name="keywords"
         content="Cayman Chromatic Underwater Photography Art Cayman Islands Home Decor Gift Wallart Canvas Scuba Diving">
     <meta name="author" content="Thomas Williamson">
-    <title>Cayman Chromatic - Gallery ( Chromatic-1 ) | Underwater Photography Art from the Cayman Islands</title>
+    <title>Cayman Chromatic - Gallery ( Series-1 ) | Underwater Photography Art from the Cayman Islands</title>
 
     <link rel="shortcut icon" type="image/png" href="images/cayman-chromatic-favicon.png">
     <!-- Google Font -->
@@ -19,6 +19,7 @@
     <!-- Font Awesome Icons -->
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
+    <link rel="stylesheet" href="css/menus.css">
     <link rel="stylesheet" href="fancy-box/jquery.fancybox.css" />
     <link rel="stylesheet" href="css/gallery.css">
 </head>
@@ -40,63 +41,127 @@
         </div>
     </div>
 
-    
-    <!-- ---Side Menu--- -->
-    <div class="mob-wrapper">
+    <!-- Mobile Menu -->
+    <div class="mobile-topbar">
 
-        <nav class="mob-nav">
+        <div class="mob-wrapper">
 
-            <div class="nav-logo">
-                <div class="sidelogo">
-                    <img width="270" src="images/Cayman-Chromatic-logo-navigation-white.svg"
-                        alt="Cayman Chromatic Underwater Photography Art logo">
+            <nav class="mob-nav">
+
+                <div class="nav-logo">
+                    <div class="sidelogo">
+                        <img width="270" src="images/Cayman-Chromatic-logo-navigation-white.svg"
+                            alt="Cayman Chromatic Underwater Photography Art logo">
+                    </div>
+
                 </div>
 
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a class="gal-btn">Gallery
+                            <span class="fas fa-plus rotate"></span>
+                        </a>
+                        <ul class="gal-show">
+                            <li><a href="gallery-chromatic-2.html">Chromatic Series 2</a></li>
+                            <li><a href="gallery-chromatic-1.html">Chromatic Series 1</a></li>
+                            <li><a href="gallery-monochromatic.html">Monochromatic Art</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="store.html">Store</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li>
+                        <div class="social-mob">
+                            <a href="https://www.facebook.com/caymanchromatic" target="_blank"><i
+                                    class="fab fa-facebook-f"></i></a>
+
+                            <a href="https://www.instagram.com/caymanchromatic/" target="_blank"><i
+                                    class="fab fa-instagram"></i></a>
+                        </div>
+                    </li>
+                </ul>
+
+
+            </nav>
+
+        </div>
+    </div>
+
+    <!-- ---Desktop Top Menu--- -->
+    <div class="desktop-topbar">
+        <div class="nav-logo">
+            <div class="sidelogo">
+                <img width="250" src="images/Cayman-Chromatic-logo-navigation-black-2.svg"
+                    alt="Cayman Chromatic Underwater Photography Art logo">
             </div>
 
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li>
-                    <a href="#" class="gal-btn">Gallery
-                        <span class="fas fa-plus rotate"></span>
+        </div>
+
+        <ul>
+            <li><a class="home mainmen" href="index.html">Home</a></li>
+            <li>
+                <div class="dropdown">
+                    <a class="gal-btn mainmen" onclick="myFunction()">Gallery
+                        <span class="fas fa-chevron-down rotate"></span>
                     </a>
-                    <ul class="gal-show">
-                        <li><a href="gallery-chromatic-2.html">Chromatic Art</a></li>
-                        <li><a href="gallery-monochromatic.html">Monochromatic Art</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Store</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-                <li>
-                    <div class="social-mob">
-                        <a href="https://www.facebook.com/caymanchromatic" target="_blank"><i
-                                class="fab fa-facebook-f"></i></a>
-
-                        <a href="https://www.instagram.com/caymanchromatic/" target="_blank"><i
-                                class="fab fa-instagram"></i></a>
+                    <div id="myDropdown" class="dropdown-content">
+                      <a class="pink" href="gallery-chromatic-2.html">Chromatic Series 2</a>
+                      <a class="blue" href="gallery-chromatic-1.html">Chromatic Series 1</a>
+                      <a class="bw" href="gallery-monochromatic.html">Monhochromatic</a>
                     </div>
-                </li>
-            </ul>
-
-
-        </nav>
+                  </div>
+            </li>
+            <li><a class="store mainmen" href="store.html">Store</a></li>
+            <li><a class="about mainmen" href="#">About</a></li>
+            <li><a class="contact mainmen" href="#">Contact</a></li>
+            <li><a href="https://www.facebook.com/caymanchromatic" target="_blank"><i class="fab fa-social fa-facebook-f"></i></a></li>
+            <li><a href="https://www.instagram.com/caymanchromatic/" target="_blank"><i class="fab fa-social fa-instagram"></i></a></li>
+        </ul>
 
     </div>
 
 
+    
     <div class="container">
         <!-- ---Gallery Top Menu--- -->
-        <div class="gallery-title">
-            <ul>
-                <li><a class="chromatic-link" href="gallery-chromatic-2.html">Chromatic Series 2</a></li>
-                <li><a class="chromatic-link2  active-page" href="gallery-chromatic-1.html">Chromatic Series 1</a></li>
-                <li><a class="monochromatic-link" href="gallery-monochromatic.html">Monochromatic</a></li>
-            </ul>
+        <div class="gallery-title-mob">
+
+
+            <div class="gallery-links">
+
+                <nav class="gallery-link-mob">
+                    <a class="chromatic-link" href="gallery-chromatic-2.html">
+                        <div class="letter">Chrom 2</div>
+                    </a>
+
+                    <a class="chromatic-link2 active-page" href="gallery-chromatic-1.html">
+                        <div class="letter">Chrom 1</div>
+                    </a>
+
+                    <a class="monochromatic-link" href="gallery-monochromatic.html">
+                        <div class="letter">Monochrom</div>
+                    </a>
+                </nav>
+
+                <nav class="gallery-link-desktop">
+                    <a class="chromatic-link" href="gallery-chromatic-2.html">
+                        <div class="letter">Chromatic Gallery 2</div>
+                    </a>
+
+                    <a class="chromatic-link2 active-page" href="gallery-chromatic-1.html">
+                        <div class="letter">Chromatic Gallery 1</div>
+                    </a>
+
+                    <a class="monochromatic-link" href="gallery-monochromatic.html">
+                        <div class="letter">Monochromatic</div>
+                    </a>
+                </nav>
+            </div>
         </div>
     
     
-        <!-- ---Gallery Description--- -->
+        <!-- ---Gallery--- -->
         <p class="imglist">
     
             <a href="gallery1/WT/Cayman-Chromatic-Art-S1-Web-Squid-1.jpg" data-fancybox="images"
@@ -214,8 +279,8 @@
             </a>
     
         </p>
-    
-    
+ 
+        
         <!-- ---Gallery Description--- -->
         <div class="gallery-description">
             <h1>About Cayman Chromatic Series 1</h1>
@@ -232,6 +297,31 @@
         </div>
     </div>
 
+    <footer>
+        <div class="footer-content">
+            <div class="backup">
+
+                <button onclick="topFunction()" id="footerBtn" title="Return to top">
+                    <i class="fas fa-angle-up"></i>
+                    Return to top</button>
+                
+            </div>
+
+            <div class="footer-logo-mob">
+                <img width="35" src="images/Cayman-Chromatic-logo-small-1.svg"
+                    alt="Cayman Chromatic Underwater Photography Art footer white logo">
+            </div>
+    
+            <div class="footer-logo-tab">
+                <img width="220" src="images/Cayman-Chromatic-logo-navigation-black-2.svg"
+                    alt="Cayman Chromatic Underwater Photography Art footer white logo">
+            </div>
+            
+            <a href="https://www.facebook.com/caymanchromatic" target="_blank"><i class="fab fa-social fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/caymanchromatic/" target="_blank"><i class="fab fa-social fa-instagram"></i></a>
+        </div>
+        
+    </footer>
 
     <!-- Javascript -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>

@@ -19,6 +19,7 @@
     <!-- Font Awesome Icons -->
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
+    <link rel="stylesheet" href="css/menus.css">
     <link rel="stylesheet" href="fancy-box/jquery.fancybox.css" />
     <link rel="stylesheet" href="css/gallery.css">
 </head>
@@ -40,102 +41,203 @@
         </div>
     </div>
 
+    <!-- Mobile Menu -->
+    <div class="mobile-topbar">
 
-    <!-- ---Side Menu--- -->
-    <div class="mob-wrapper">
+        <div class="mob-wrapper">
 
-        <nav class="mob-nav">
+            <nav class="mob-nav">
 
-            <div class="nav-logo">
-                <div class="sidelogo">
-                    <img width="270" src="images/Cayman-Chromatic-logo-navigation-white.svg"
-                        alt="Cayman Chromatic Underwater Photography Art logo">
+                <div class="nav-logo">
+                    <div class="sidelogo">
+                        <img width="270" src="images/Cayman-Chromatic-logo-navigation-white.svg"
+                            alt="Cayman Chromatic Underwater Photography Art logo">
+                    </div>
+
                 </div>
 
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li>
+                        <a class="gal-btn">Gallery
+                            <span class="fas fa-plus rotate"></span>
+                        </a>
+                        <ul class="gal-show">
+                            <li><a href="gallery-chromatic-2.html">Chromatic Series 2</a></li>
+                            <li><a href="gallery-chromatic-1.html">Chromatic Series 1</a></li>
+                            <li><a href="gallery-monochromatic.html">Monochromatic Art</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="store.html">Store</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li>
+                        <div class="social-mob">
+                            <a href="https://www.facebook.com/caymanchromatic" target="_blank"><i
+                                    class="fab fa-facebook-f"></i></a>
+
+                            <a href="https://www.instagram.com/caymanchromatic/" target="_blank"><i
+                                    class="fab fa-instagram"></i></a>
+                        </div>
+                    </li>
+                </ul>
+
+
+            </nav>
+
+        </div>
+    </div>
+
+    <!-- ---Desktop Top Menu--- -->
+    <div class="desktop-topbar">
+        <div class="nav-logo">
+            <div class="sidelogo">
+                <img width="250" src="images/Cayman-Chromatic-logo-navigation-black-2.svg"
+                    alt="Cayman Chromatic Underwater Photography Art logo">
             </div>
 
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li>
-                    <a href="#" class="gal-btn">Gallery
-                        <span class="fas fa-plus rotate"></span>
+        </div>
+
+        <ul>
+            <li><a class="home mainmen" href="index.html">Home</a></li>
+            <li>
+                <div class="dropdown">
+                    <a class="gal-btn mainmen" onclick="myFunction()">Gallery
+                        <span class="fas fa-chevron-down rotate"></span>
                     </a>
-                    <ul class="gal-show">
-                        <li><a href="gallery-chromatic-2.html">Chromatic Art</a></li>
-                        <li><a href="gallery-monochromatic.html">Monochromatic Art</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">Store</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Contact</a></li>
-                <li>
-                    <div class="social-mob">
-                        <a href="https://www.facebook.com/caymanchromatic" target="_blank"><i
-                                class="fab fa-facebook-f"></i></a>
-
-                        <a href="https://www.instagram.com/caymanchromatic/" target="_blank"><i
-                                class="fab fa-instagram"></i></a>
+                    <div id="myDropdown" class="dropdown-content">
+                      <a class="pink" href="gallery-chromatic-2.html">Chromatic Series 2</a>
+                      <a class="blue" href="gallery-chromatic-1.html">Chromatic Series 1</a>
+                      <a class="bw" href="gallery-monochromatic.html">Monhochromatic</a>
                     </div>
-                </li>
-            </ul>
-
-
-        </nav>
+                  </div>
+            </li>
+            <li><a class="store mainmen" href="store.html">Store</a></li>
+            <li><a class="about mainmen" href="#">About</a></li>
+            <li><a class="contact mainmen" href="#">Contact</a></li>
+            <li><a href="https://www.facebook.com/caymanchromatic" target="_blank"><i class="fab fa-social fa-facebook-f"></i></a></li>
+            <li><a href="https://www.instagram.com/caymanchromatic/" target="_blank"><i class="fab fa-social fa-instagram"></i></a></li>
+        </ul>
 
     </div>
 
 
     <div class="container">
         <!-- ---Gallery Top Menu--- -->
-        <div class="gallery-title">
-            <ul>
-                <li><a class="chromatic-link" href="gallery-chromatic-2.html">Chromatic Series 2</a></li>
-                <li><a class="chromatic-link2" href="gallery-chromatic-1.html">Chromatic Series 1</a></li>
-                <li><a class="monochromatic-link  active-page" href="gallery-monochromatic.html">Monochromatic</a></li>
-            </ul>
+        <div class="gallery-title-mob">
+
+
+            <div class="gallery-links">
+
+                <nav class="gallery-link-mob">
+                    <a class="chromatic-link" href="gallery-chromatic-2.html">
+                        <div class="letter">Chrom 2</div>
+                    </a>
+
+                    <a class="chromatic-link2" href="gallery-chromatic-1.html">
+                        <div class="letter">Chrom 1</div>
+                    </a>
+
+                    <a class="monochromatic-link active-page" href="gallery-monochromatic.html">
+                        <div class="letter">Monochrom</div>
+                    </a>
+                </nav>
+
+                <nav class="gallery-link-desktop">
+                    <a class="chromatic-link" href="gallery-chromatic-2.html">
+                        <div class="letter">Chromatic Gallery 2</div>
+                    </a>
+
+                    <a class="chromatic-link2" href="gallery-chromatic-1.html">
+                        <div class="letter">Chromatic Gallery 1</div>
+                    </a>
+
+                    <a class="monochromatic-link active-page" href="gallery-monochromatic.html">
+                        <div class="letter">Monochromatic</div>
+                    </a>
+                </nav>
+            </div>
         </div>
     
     
         <!-- ---Gallery--- -->
         <p class="imglist">
+
+            <a href="gallery3/WT/Cayman-Chromatic-Art-S3-Squid-4.jpg" data-fancybox="images"
+            data-caption="<h2 class='title_style'>Caribbean Seahorse - 1</h2><p class='caption_style'>Seahorses are fish that swim upright. Their elongated faces give a horse-like appearance.Their bodies are covered with bony plates for protection and the coronet at the top of their heads is as unique to each seahorse as a thumbprint is to a human.</p> <a class='link_style' href='#'>See pricing options</a>">
+
+            <img class="thumbnail-fade" src="gallery3/TN/Cayman-Chromatic-Art-S3-Squid-4.jpg" alt="Seahorse">
+            </a>
+
+            <a href="gallery3/WT/Cayman-Chromatic-Art-S3-Silder-Sides.jpg" data-fancybox="images"
+            data-caption="<h2 class='title_style'>Atlantic Silverside</h2><p class='caption_style'>The Black Sea Rod, otherwise known as Caribbean Sea Whip is a coral specie covered in tiny, branch like tentacles which are used to sting and capture swimming plankton as its primary food source. It has been used in beauty products due to its anti-inflammatory agents.</p> <a class='link_style' href='#'>See pricing options</a>">
+
+            <img class="thumbnail-fade" src="gallery3/TN/Cayman-Chromatic-Art-S3-Silder-Sides.jpg" alt="Searods">
+            </a>
+
+            <a href="gallery3/WT/Cayman-Chromatic-Art-S3-Stingray.jpg" data-fancybox="images"
+            data-caption="<h2 class='title_style'>Southern Stingray</h2><p class='caption_style'>The Black Sea Rod, otherwise known as Caribbean Sea Whip is a coral specie covered in tiny, branch like tentacles which are used to sting and capture swimming plankton as its primary food source. It has been used in beauty products due to its anti-inflammatory agents.</p> <a class='link_style' href='#'>See pricing options</a>">
+
+            <img class="thumbnail-fade" src="gallery3/TN/Cayman-Chromatic-Art-S3-Stingray.jpg" alt="Searods">
+            </a>
+
+            <a href="gallery3/WT/Cayman-Chromatic-Art-S3-Lion-Fish.jpg" data-fancybox="images"
+            data-caption="<h2 class='title_style'>Red Cushion Sea Star - 2</h2><p class='caption_style'>The Red Cushion Starfish is the largest sea star found within its range, sometimes growing to about 50 centimetres in diameter. It usually has five thick, broad arms projecting from a broad cushioned disc but some specimens have four, six or seven.</p> <a class='link_style' href='#'>See pricing options</a>">
+
+            <img class="thumbnail-fade" src="gallery3/TN/Cayman-Chromatic-Art-S3-Lion-Fish.jpg" alt="Starfish">
+            </a>
+
+            <a href="gallery3/WT/Cayman-Chromatic-Art-S3-Flamingo-Tongue-4.jpg" data-fancybox="images"
+            data-caption="<h2 class='title_style'>Bicolor Damselfish</h2><p class='caption_style'>The Bicolor Damselfish get their name from the contrasting dark-coloured front body and light-colored back body, usually a yellow stripe or patch in the middle. They gather in groups of up to twenty individuals and defend their reef territories.</p> <a class='link_style' href='#'>See pricing options</a>">
+
+            <img class="thumbnail-fade" src="gallery3/TN/Cayman-Chromatic-Art-S3-Flamingo-Tongue-4.jpg" alt="Fish">
+            </a>
     
-            <a href="gallery3/WT/Cayman-Chromatic-Art-S3-Anemone-2.jpg" data-fancybox="images"
-                data-caption="<h2 class='title_style'>Red Cushion Sea Star - 1</h2><p class='caption_style'>The Red Cushion Starfish is the largest sea star found within its range, sometimes growing to about 50 centimetres in diameter. It usually has five thick, broad arms projecting from a broad cushioned disc but some specimens have four, six or seven.</p> <a class='link_style' href='#'>See pricing options</a>">
+            <a href="gallery3/WT/Cayman-Chromatic-Art-S3-Hydroid-1.jpg" data-fancybox="images"
+                data-caption="<h2 class='title_style'>Solitary Hydroid - 1</h2><p class='caption_style'>The Red Cushion Starfish is the largest sea star found within its range, sometimes growing to about 50 centimetres in diameter. It usually has five thick, broad arms projecting from a broad cushioned disc but some specimens have four, six or seven.</p> <a class='link_style' href='#'>See pricing options</a>">
     
-                <img class="thumbnail-fade" src="gallery3/TN/Cayman-Chromatic-Art-S3-Anemone-2.jpg"
+                <img class="thumbnail-fade" src="gallery3/TN/Cayman-Chromatic-Art-S3-Hydroid-1.jpg"
                     alt="Starfish Red Cushion Sea Star Cayman Chromatic Art">
             </a>
+
+            <a href="gallery3/WT/Cayman-Chromatic-Art-S3-Fish.jpg" data-fancybox="images"
+            data-caption="<h2 class='title_style'>Caribbean Seahorse - 1</h2><p class='caption_style'>Seahorses are fish that swim upright. Their elongated faces give a horse-like appearance.Their bodies are covered with bony plates for protection and the coronet at the top of their heads is as unique to each seahorse as a thumbprint is to a human.</p> <a class='link_style' href='#'>See pricing options</a>">
     
-            <a href="gallery3/WT/Cayman-Chromatic-Art-S3-Squid-4.jpg" data-fancybox="images"
-                data-caption="<h2 class='title_style'>Caribbean Seahorse - 1</h2><p class='caption_style'>Seahorses are fish that swim upright. Their elongated faces give a horse-like appearance.Their bodies are covered with bony plates for protection and the coronet at the top of their heads is as unique to each seahorse as a thumbprint is to a human.</p> <a class='link_style' href='#'>See pricing options</a>">
-    
-                <img class="thumbnail-fade" src="gallery3/TN/Cayman-Chromatic-Art-S3-Squid-4.jpg" alt="Seahorse">
+            <img class="thumbnail-fade" src="gallery3/TN/Cayman-Chromatic-Art-S3-Fish.jpg" alt="Seahorse">
             </a>
-    
-            <a href="gallery3/WT/Cayman-Chromatic-Art-S3-Silder-Sides.jpg" data-fancybox="images"
-                data-caption="<h2 class='title_style'>Caribbean Sea Whip - 3</h2><p class='caption_style'>The Black Sea Rod, otherwise known as Caribbean Sea Whip is a coral specie covered in tiny, branch like tentacles which are used to sting and capture swimming plankton as its primary food source. It has been used in beauty products due to its anti-inflammatory agents.</p> <a class='link_style' href='#'>See pricing options</a>">
-    
-                <img class="thumbnail-fade" src="gallery3/TN/Cayman-Chromatic-Art-S3-Silder-Sides.jpg" alt="Searods">
+
+            <a href="gallery3/WT/Cayman-Chromatic-Art-S3-Octopus.jpg" data-fancybox="images"
+            data-caption="<h2 class='title_style'>Pistol Snapping Shrimp</h2><p class='caption_style'>Pistol Snapping Shrimps have a disproportionately large claw, used with an incredibly fast, pistol-like snap that creates a cavitation bubble loud enough to stun, or even kill their prey. They usually keep their distance themselves to avoid accidentally snapping each other.</p> <a class='link_style' href='#'>See pricing options</a>">
+
+            <img class="thumbnail-fade" src="gallery3/TN/Cayman-Chromatic-Art-S3-Octopus.jpg" alt="Shrimp">
             </a>
-    
+
             <a href="gallery3/WT/Cayman-Chromatic-Art-S3-Jelly-Fish.jpg" data-fancybox="images"
-                data-caption="<h2 class='title_style'>Pistol Snapping Shrimp</h2><p class='caption_style'>Pistol Snapping Shrimps have a disproportionately large claw, used with an incredibly fast, pistol-like snap that creates a cavitation bubble loud enough to stun, or even kill their prey. They usually keep their distance themselves to avoid accidentally snapping each other.</p> <a class='link_style' href='#'>See pricing options</a>">
+            data-caption="<h2 class='title_style'>Pistol Snapping Shrimp</h2><p class='caption_style'>Pistol Snapping Shrimps have a disproportionately large claw, used with an incredibly fast, pistol-like snap that creates a cavitation bubble loud enough to stun, or even kill their prey. They usually keep their distance themselves to avoid accidentally snapping each other.</p> <a class='link_style' href='#'>See pricing options</a>">
+
+            <img class="thumbnail-fade" src="gallery3/TN/Cayman-Chromatic-Art-S3-Jelly-Fish.jpg" alt="Shrimp">
+        </a>
     
-                <img class="thumbnail-fade" src="gallery3/TN/Cayman-Chromatic-Art-S3-Jelly-Fish.jpg" alt="Shrimp">
-            </a>
-    
-            <a href="gallery3/WT/Cayman-Chromatic-Art-S3-Flamingo-Tongue-4.jpg" data-fancybox="images"
-                data-caption="<h2 class='title_style'>Bicolor Damselfish</h2><p class='caption_style'>The Bicolor Damselfish get their name from the contrasting dark-coloured front body and light-colored back body, usually a yellow stripe or patch in the middle. They gather in groups of up to twenty individuals and defend their reef territories.</p> <a class='link_style' href='#'>See pricing options</a>">
-    
-                <img class="thumbnail-fade" src="gallery3/TN/Cayman-Chromatic-Art-S3-Flamingo-Tongue-4.jpg" alt="Fish">
-            </a>
-    
-            <a href="gallery3/WT/Cayman-Chromatic-Art-S3-Lion-Fish.jpg" data-fancybox="images"
-                data-caption="<h2 class='title_style'>Red Cushion Sea Star - 2</h2><p class='caption_style'>The Red Cushion Starfish is the largest sea star found within its range, sometimes growing to about 50 centimetres in diameter. It usually has five thick, broad arms projecting from a broad cushioned disc but some specimens have four, six or seven.</p> <a class='link_style' href='#'>See pricing options</a>">
-    
-                <img class="thumbnail-fade" src="gallery3/TN/Cayman-Chromatic-Art-S3-Lion-Fish.jpg" alt="Starfish">
-            </a>
-    
+            <a href="gallery3/WT/Cayman-Chromatic-Art-S3-Hydroid-2.jpg" data-fancybox="images"
+            data-caption="<h2 class='title_style'>Solitary Hydroid - 2</h2><p class='caption_style'>The Red Cushion Starfish is the largest sea star found within its range, sometimes growing to about 50 centimetres in diameter. It usually has five thick, broad arms projecting from a broad cushioned disc but some specimens have four, six or seven.</p> <a class='link_style' href='#'>See pricing options</a>">
+
+            <img class="thumbnail-fade" src="gallery3/TN/Cayman-Chromatic-Art-S3-Hydroid-2.jpg"
+                alt="Starfish Red Cushion Sea Star Cayman Chromatic Art">
+        </a>
+
+
+        <a href="gallery3/WT/Cayman-Chromatic-Art-S3-Squid-5.jpg" data-fancybox="images"
+        data-caption="<h2 class='title_style'>Caribbean Reef Squid - 5</h2><p class='caption_style'>Caribbean Reef Squid is a delight for photographers. Their translucent body reflects light and they don't shy away from the camera. For camouflage and for complex communication they can rapidly change skin color and pattern through nervous control of chromatophores.</p> <a class='link_style' href='#'>See pricing options</a>">
+
+        <img class="thumbnail-fade" src="gallery3/TN/Cayman-Chromatic-Art-S3-Squid-5.jpg" alt="Fish">
+        </a>
+
+        <a href="gallery3/WT/Cayman-Chromatic-Art-S3-Starfish-4.jpg" data-fancybox="images"
+        data-caption="<h2 class='title_style'>Red Cushion Sea Star - 2</h2><p class='caption_style'>The Red Cushion Starfish is the largest sea star found within its range, sometimes growing to about 50 centimetres in diameter. It usually has five thick, broad arms projecting from a broad cushioned disc but some specimens have four, six or seven.</p> <a class='link_style' href='#'>See pricing options</a>">
+
+        <img class="thumbnail-fade" src="gallery3/TN/Cayman-Chromatic-Art-S3-Starfish-4.jpg" alt="Starfish">
+        </a>
+
         </p>
     
         
@@ -152,6 +254,32 @@
         </div>
     </div>
 
+
+    <footer>
+        <div class="footer-content">
+            <div class="backup">
+
+                <button onclick="topFunction()" id="footerBtn" title="Return to top">
+                    <i class="fas fa-angle-up"></i>
+                    Return to top</button>
+                
+            </div>
+
+            <div class="footer-logo-mob">
+                <img width="35" src="images/Cayman-Chromatic-logo-small-1.svg"
+                    alt="Cayman Chromatic Underwater Photography Art footer white logo">
+            </div>
+    
+            <div class="footer-logo-tab">
+                <img width="220" src="images/Cayman-Chromatic-logo-navigation-black-2.svg"
+                    alt="Cayman Chromatic Underwater Photography Art footer white logo">
+            </div>
+            
+            <a href="https://www.facebook.com/caymanchromatic" target="_blank"><i class="fab fa-social fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/caymanchromatic/" target="_blank"><i class="fab fa-social fa-instagram"></i></a>
+        </div>
+        
+    </footer>
 
     <!-- Javascript -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>

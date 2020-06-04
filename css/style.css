@@ -324,7 +324,7 @@ header {
 .tablet-logo {
   position: absolute;
   padding-left: 20px;
-  max-width: 220px;
+  max-width: 250px;
   z-index: 999;
 }
 
