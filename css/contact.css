@@ -1,0 +1,176 @@
+:root{
+    --font-color:#555;
+    --font-hover-color:orange;
+}
+
+* {
+    /* height: 100vh; */
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    font-family:"Raleway", sans-serif;
+    background-image: linear-gradient(to right bottom, rgba(0, 195, 255, 0.0), rgba(0, 255, 102, 0.0) ), url('../images/Cayman-Chromatic-Flamingo-Tongue-Page-Background-2.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+}
+
+/* ---------Desktop Topbar-------------- */
+
+.desktop-topbar {
+    padding: .75rem 0 0 0;
+    opacity: 1;
+    z-index: 99;
+}
+
+.sidelogo {
+    filter: invert(48%) sepia(100%) saturate(0%) hue-rotate(86deg) brightness(25%) contrast(100%);
+    transition: all 0.4s ease;
+}
+
+.sidelogo:hover {
+    filter: none;
+}
+
+
+/* .desktop-topbar ul li a {
+    color: rgb(255, 255, 255);
+} */
+
+/* .topbarshadow {
+    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, .05), rgba(0, 0, 0, 0));
+    z-index: 0;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    height: 300px;
+} */
+
+/* .desktop-topbar .fa-facebook-f {
+    color: rgb(132, 210, 230);
+}
+
+.desktop-topbar .fa-instagram {
+    color: rgb(255, 239, 161);
+} */
+
+
+/* Mobile Side Menu */
+
+.tablet-logo {
+    position: absolute;
+    top: 25px;
+    padding-left: 20px;
+    max-width: 220px;
+    z-index: 999;
+    opacity: 1;
+    transition: 0.3s ease-in-out;
+}
+
+.tablet-logo.move-right {
+    opacity: 0%;
+}
+
+/* ---------Contact box-------------- */
+
+.contact-background {
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.9);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    clip-path: polygon(33% 0, 100% 0, 100% 100%, 52% 100%);
+}
+
+.container{
+    position: absolute;
+    top: 15vh;
+    right: 7vw;
+    width:500px;
+    padding:2em;
+    /* background-color:rgb(255, 255, 255); */
+}
+
+.container h1{
+    font-size: 3rem;
+    padding-bottom: 2rem;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+.form-group{
+    margin-bottom:1.5em;
+    transition:all .3s;
+}
+.form-label{
+    font-size:1.1rem;
+    font-family: 'Josefin Sans', sans-serif;
+    padding: 0 0 0.3rem .1rem;
+    color:var(--font-color);
+    display:block;
+    opacity:.4;
+    transition: all .3s;
+    transform:translateY(25px);
+}
+.form-control{
+    box-shadow: none;
+    background: none;
+    border-radius: 0;
+    border-color:#ccc;
+    border-style: none;
+    margin-bottom: .2rem;
+    width:100%;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1.1rem;
+    padding: .2rem;
+    opacity: 1;
+    transition:all .6s;
+}
+.form-control::placeholder{
+    color:rgba(131, 131, 131, 0);
+}
+.form-control:focus{
+    box-shadow:none;
+    border-color:var(--font-hover-color);
+    outline:none;
+    opacity: 1;
+}
+
+.btn{
+    background: 0 0 rgb(210, 255, 247);
+    border: none;
+
+    color:var(--font-color);
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 1em;
+    padding: 1rem;
+    text-transform:uppercase;
+    transition:all .4s;
+}
+.btn:hover{
+    color: #fff;
+    background-color: #09BAE7;
+}
+textarea{
+    resize:none;
+}
+
+
+.focused > .form-label{
+    opacity:1;
+    transform:translateY(0px);
+
+}
