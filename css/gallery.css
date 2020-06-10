@@ -53,7 +53,7 @@ body {
 .gallery-link-desktop {
     position: absolute;
     top: 0;
-    margin-top: 11vh;
+    margin-top: 25vh;
     margin-bottom: 11vh;
     margin-left: 20px;
 }
@@ -61,7 +61,7 @@ body {
 .gallery-link-mob {
     position: absolute;
     top: 0;
-    margin-top: 15vh;
+    margin-top: 25vh;
     margin-left: 20px;
 }
 
@@ -77,12 +77,13 @@ body {
     letter-spacing: .3rem;
     padding: 25px 5px;
     flex-direction: row;
-    transition: color 1s ease;
     margin: 0px;
+    transition: color 1s ease;
+
 }
 
 .gallery-links .active-page {
-    color: rgb(174, 174, 174);
+    color: rgb(155, 155, 155);
 }
 
 .gallery-links .chromatic-link {
@@ -109,12 +110,12 @@ body {
     background-image: linear-gradient(to right, rgb(80, 173, 255), rgb(76, 232, 125));
 }
 
-.gallery-links .monochromatic-link {
+.gallery-links .chromatic-link3 {
     border-radius: 1px;
     transition: 0.4s;
 }
 
-.gallery-links .monochromatic-link:hover {
+.gallery-links .chromatic-link3:hover {
     color: rgb(255, 255, 255);
     padding-right: 45px;
     margin-left: -15px;

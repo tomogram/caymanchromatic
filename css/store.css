@@ -19,7 +19,6 @@
 
 body {
     font-family: 'Josefin Sans', sans-serif;
-    font-weight: 400;
     background-color: rgb(255, 255, 255);
 }
 
@@ -358,7 +357,7 @@ h2 {
     background-image: linear-gradient(to right, rgb(80, 173, 255), rgb(76, 232, 125));
 }
 
-.mono:hover {
+.chrom3:hover {
     background-image: linear-gradient(to right, rgb(34, 34, 34), rgb(82, 82, 82));
 }
 

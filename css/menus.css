@@ -11,6 +11,8 @@
 
 html {
     scroll-behavior: smooth;
+    /* width: 100vw; */
+    overflow-x: hidden;
 }
 
 /* ---------Desktop Topbar-------------- */
@@ -220,6 +222,7 @@ html {
     }
 
 .nav-logo {
+    z-index: 1;
     position: relative;
     width: 700px;
     margin-top: 1rem;

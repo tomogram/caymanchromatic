@@ -24,9 +24,10 @@ body{
 }
 
 footer {
-    position: absolute;
-    bottom: 0;
+    position: fixed;
 }
+
+
 
 /* ---------Desktop Topbar-------------- */
 
@@ -36,36 +37,14 @@ footer {
     z-index: 99;
 }
 
-.sidelogo {
+.overlay {
     filter: invert(48%) sepia(100%) saturate(0%) hue-rotate(86deg) brightness(25%) contrast(100%);
     transition: all 0.4s ease;
 }
 
-.sidelogo:hover {
+.overlay:hover {
     filter: none;
 }
-
-
-/* .desktop-topbar ul li a {
-    color: rgb(255, 255, 255);
-} */
-
-/* .topbarshadow {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, .05), rgba(0, 0, 0, 0));
-    z-index: 0;
-    position: absolute;
-    top: 0px;
-    width: 100%;
-    height: 300px;
-} */
-
-/* .desktop-topbar .fa-facebook-f {
-    color: rgb(132, 210, 230);
-}
-
-.desktop-topbar .fa-instagram {
-    color: rgb(255, 239, 161);
-} */
 
 
 /* Mobile Side Menu */
@@ -90,36 +69,45 @@ footer {
     position: absolute;
     background-color: rgba(255, 255, 255, 0.9);
     width: 100%;
-    height: 100%;
+    height: 100vh;
     top: 0;
-    right: 0;
-    clip-path: polygon(33% 0, 100% 0, 100% 100%, 52% 100%);
+    left: 50%;
+    transform: translateX(-50%);
+    clip-path: polygon(0 80px, 100% 80px, 100% 100%, 0% 100%);
 }
 
 .container{
     position: absolute;
-    top: 15vh;
-    right: 7vw;
-    width:500px;
-    padding:2em;
-    /* background-color:rgb(255, 255, 255); */
+    top: 120px;
+    right: 50%;
+    transform: translateX(50%);
+    width:90vw;
+    padding:.4rem;
+    transition:all .4s ease;
 }
 
-.container h1{
-    font-size: 3rem;
-    padding-bottom: 2rem;
+.container.move-right {
+    opacity: 0;
+    margin-left: 8rem;
+    margin-right: -8rem;
+}
+
+h1{
+    font-size: 2rem;
+    padding: 0 0 .1rem .5rem;
     font-family: 'Josefin Sans', sans-serif;
 }
 
+
 .form-group{
-    margin-bottom:1.5em;
+    margin-bottom:1.4rem;
     transition:all .3s;
 }
 .form-label{
     font-size:1.1rem;
     font-family: 'Josefin Sans', sans-serif;
     padding: 0 0 0.3rem .1rem;
-    color:var(--font-color);
+    color:rgb(60, 60, 60);
     display:block;
     opacity:.4;
     transition: all .3s;
@@ -140,16 +128,21 @@ footer {
     transition:all .6s;
 }
 .form-control::placeholder{
-    color:rgba(131, 131, 131, 0);
+    color: rgba(9, 187, 231, 0);
 }
 .form-control:focus{
     box-shadow:none;
     border-color:var(--font-hover-color);
     outline:none;
+    color: rgb(38, 38, 38);
     opacity: 1;
 }
 
+
 .btn{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     background: 0 0 rgb(210, 255, 247);
     border: none;
 
@@ -159,6 +152,7 @@ footer {
     padding: 1rem;
     text-transform:uppercase;
     transition:all .4s;
+    width: 50vw;
 }
 .btn:hover{
     color: #fff;
@@ -171,6 +165,163 @@ textarea{
 
 .focused > .form-label{
     opacity:1;
+    color: rgb(58, 212, 255);
     transform:translateY(0px);
 
+}
+
+label, input, textarea {
+    display: block;
+}
+
+@media (min-width: 600px) {
+    h1{
+        font-size: 2.8rem;
+        padding: .5rem 0 .5rem 0;
+    }
+    
+    }
+
+@media (min-width: 975px) {
+    .contact-background {
+        right: 0;
+        clip-path: polygon(30% 0, 100% 0, 100% 100%, 30% 100%);
+    }
+
+    .container{
+        position: absolute;
+        top: 15vh;
+        right: 7vw;
+        transform: translateX(0%);
+        width:500px;
+        padding:2em;
+    }
+
+    h1{
+        font-size: 3.3rem;
+        padding-bottom: 1rem;
+    }
+
+    .btn{
+        position: relative;
+        left: 250px;
+        width: 250px;
+    }
+    
+    }
+
+@media (min-width: 1250px) {
+    .contact-background {
+        clip-path: polygon(33% 0, 100% 0, 100% 100%, 52% 100%);
+    }
+
+    .container{
+        right: 10vw;
+        width: 550px;
+    }
+
+    h1{
+        font-size: 4rem;
+        padding-bottom: .8rem;
+    }
+
+    }
+
+    @media (min-width: 1550px) {
+        .container{
+            right: 11vw;
+            width: 650px;
+        }
+    
+        h1{
+            font-size: 4.5rem;
+        }
+    
+        }
+
+
+/*Typewritter effect*/
+
+.line-1 {
+    width: 24em;
+    margin: 0 auto;
+    border-right: 2px solid rgba(255,255,255,.75);
+    white-space: nowrap;
+    overflow: hidden;
+    transform: translateY(-50%);    
+}
+
+/* Animation */
+.anim-typewriter{
+  animation: typewriter 1s steps(19) 1s 1 normal both,
+             blinkTextCursor 500ms steps(10) infinite normal;
+}
+@keyframes typewriter{
+  from{width: 0;}
+  to{width: 24em;}
+}
+@keyframes blinkTextCursor{
+  from{border-right-color: rgba(255,255,255,.75);}
+  to{border-right-color: transparent;}
+}
+
+
+/*Contact box ani*/
+.form-label{
+    animation-name: fadeIn;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    visibility: visible !important;
+    /* Safari 4.0 - 8.0 */
+    display: inline-block;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+0% {
+
+    opacity: 0%;
+}
+100% {
+
+    opacity: 100%;
+}
+}
+
+.one {
+    animation-delay: .2s;
+}
+
+.two {
+    animation-delay: .4s;
+}
+
+.three {
+    animation-delay: .6s;
+}
+
+.four {
+    animation-delay: .8s;
+}
+
+.btn{
+    animation-name: fadeIn;
+    animation-duration: .8s;
+    animation-timing-function: ease-in-out;
+    visibility: visible !important;
+    /* New code here: */
+    -webkit-animation-delay: 1s;
+    /* Safari 4.0 - 8.0 */
+    animation-delay: 1s;
+    display: inline-block;
+    animation-fill-mode: both;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0%;
+    }
+    100% {
+        opacity: 100%;
+    }
 }

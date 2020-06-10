@@ -36,6 +36,8 @@ icons.forEach (icon => {
     $('.mini-logo').toggleClass("move-right");
     $('.store-header').toggleClass("move-right");
     $('.tablet-logo').toggleClass("move-right");
+    $('p').toggleClass("move-right");
+
   });
 });
 
@@ -108,17 +110,20 @@ function openCart() {
 /// Contact page
 
 $(function() {
-   
   $(".form-control").on('focus', function(){
-
       $(this).parents(".form-group").addClass('focused');
-
-  });
-
-  $(".form-control").on('blur', function(){
-
-      $(this).parents(".form-group").removeClass('focused');
-
   });
 
 });
+
+
+// Slider   // Code By Webdevtrick ( https://webdevtrick.com )
+function beforeAfter() {
+  document.getElementById('compare1').style.width = document.getElementById('slider1').value + "%";
+  document.getElementById('compare2').style.width = document.getElementById('slider2').value + "%";
+  document.getElementById('compare3').style.width = document.getElementById('slider3').value + "%";
+  document.getElementById('compare4').style.width = document.getElementById('slider4').value + "%";
+  document.getElementById('compare5').style.width = document.getElementById('slider5').value + "%";
+  document.getElementById('compare6').style.width = document.getElementById('slider6').value + "%";
+}
+
