@@ -59,7 +59,7 @@ body{
     opacity: 0%;
 }
 
-/* ---------Contact box-------------- */
+/* ---------About box-------------- */
 
 .container {
     display: grid;
@@ -245,7 +245,7 @@ body{
 
     .about-2-image {
         width: 58vw;
-        clip-path: polygon(14% 0, 100% 0, 100% 100%, 0% 100%);
+        clip-path: polygon(22.5% 0, 100% 0, 100% 100%, 0% 100%);
 
 
     }
