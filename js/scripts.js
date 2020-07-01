@@ -5,6 +5,7 @@
         loader.className += " hidden";
     });
 
+
 // Mobile Dropdown
 
 $('.mob-btn').click(function(){
