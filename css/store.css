@@ -10,643 +10,634 @@
 */
 
 * {
-    /* height: 100%; */
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    text-decoration: none;
+  /* height: 100%; */
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-decoration: none;
 }
 
 body {
-    font-family: 'Josefin Sans', sans-serif;
-    background-color: rgb(255, 255, 255);
+  font-family: "Josefin Sans", sans-serif;
+  background-color: rgb(255, 255, 255);
 }
 
 h2 {
-    font-size: 1rem;
-    font-weight: 300;
-    letter-spacing: .2rem;
-    line-height: 1.4rem;
-    text-align: center;
+  font-size: 1rem;
+  font-weight: 300;
+  letter-spacing: 0.2rem;
+  line-height: 1.4rem;
+  text-align: center;
 }
 
 .nav-icon-1 span {
-    background-color: rgb(255, 255, 255);
+  background-color: rgb(255, 255, 255);
 }
 
 .store-header {
-    z-index: 50;
-    position: absolute;
-    top: 43vh;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 280px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-family: 'Josefin Sans', sans-serif;
-    color: #ffffff;
-    font-size: 1.8rem;
-    letter-spacing: .05rem;
-    line-height: 1.3;
-    font-weight: 500;
-    opacity: 1;
-    transition: 0.4s ease;
+  z-index: 50;
+  position: absolute;
+  top: 43vh;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Josefin Sans", sans-serif;
+  color: #ffffff;
+  font-size: 1.8rem;
+  letter-spacing: 0.05rem;
+  line-height: 1.3;
+  font-weight: 500;
+  opacity: 1;
+  transition: 0.4s ease;
 }
 
 .store-header span {
-    font-weight: 700;
-    position: relative;
-    z-index: 1;
+  font-weight: 700;
+  position: relative;
+  z-index: 1;
 }
 
 .store-header.move-right {
-    opacity: 0%;
+  opacity: 0%;
 }
-
 
 /* Header Bottom Ani */
 
 .slide-down {
-    position: relative;
-    max-width: 850px;
-    animation-name: slideDown;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
-    visibility: visible !important;
-    /* New code here: */
-    -webkit-animation-delay: .3s;
-    /* Safari 4.0 - 8.0 */
-    animation-delay: .3s;
-    display: inline-block;
-    animation-fill-mode: both;
+  position: relative;
+  max-width: 850px;
+  animation-name: slideDown;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  visibility: visible !important;
+  /* New code here: */
+  -webkit-animation-delay: 0.3s;
+  /* Safari 4.0 - 8.0 */
+  animation-delay: 0.3s;
+  display: inline-block;
+  animation-fill-mode: both;
 }
 
 @keyframes slideDown {
-    0% {
-        transform: translateY(-150%);
-        opacity: 0%;
-    }
-    100% {
-        transform: translateY(0%);
-        opacity: 100%;
-    }
+  0% {
+    transform: translateY(-150%);
+    opacity: 0%;
+  }
+  100% {
+    transform: translateY(0%);
+    opacity: 100%;
+  }
 }
 
 @-webkit-keyframes slideDown {
-    0% {
-        -webkit-transform: translateY(-150%);
-    }
-    100% {
-        -webkit-transform: translateY(0%);
-    }
+  0% {
+    -webkit-transform: translateY(-150%);
+  }
+  100% {
+    -webkit-transform: translateY(0%);
+  }
 }
 
 .scroll-down {
-    top: 80vh;
-    left: 46%;
-    transform: translateX(-50%);
-    position: absolute;
-    z-index: 50;
-    animation-name: slideDown;
-    animation-duration: 1s;
-    animation-timing-function: ease-in-out;
-    visibility: visible !important;
-    /* New code here: */
-    -webkit-animation-delay: 1s;
-    /* Safari 4.0 - 8.0 */
-    animation-delay: 1s;
-    display: inline-block;
-    animation-fill-mode: both;
+  top: 80vh;
+  left: 46%;
+  transform: translateX(-50%);
+  position: absolute;
+  z-index: 50;
+  animation-name: slideDown;
+  animation-duration: 1s;
+  animation-timing-function: ease-in-out;
+  visibility: visible !important;
+  /* New code here: */
+  -webkit-animation-delay: 1s;
+  /* Safari 4.0 - 8.0 */
+  animation-delay: 1s;
+  display: inline-block;
+  animation-fill-mode: both;
 }
 
 .scroll-down .fa-chevron-down {
-    color: #fff;
-    font-size: 3rem;
-    transition: all ease 0.3s;
+  color: #fff;
+  font-size: 3rem;
+  transition: all ease 0.3s;
 }
 
 .scroll-down .fa-chevron-down:hover {
-    margin-top: 1rem;
+  margin-top: 1rem;
 }
-
 
 /* ---------Desktop Topbar-------------- */
 
 .desktop-topbar {
-    padding: .75rem 0 0 0;
-    opacity: 1;
-    z-index: 99;
+  padding: 0.75rem 0 0 0;
+  opacity: 1;
+  z-index: 99;
 }
 
 .desktop-topbar ul li a {
-    color: rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
 }
 
 .topbarshadow {
-    background-image: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1), rgba(0, 0, 0, .05), rgba(0, 0, 0, 0));
-    z-index: 0;
-    position: absolute;
-    top: 0px;
-    width: 100%;
-    height: 300px;
+  background-image: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.3),
+    rgba(0, 0, 0, 0.1),
+    rgba(0, 0, 0, 0.05),
+    rgba(0, 0, 0, 0)
+  );
+  z-index: 0;
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  height: 300px;
 }
 
 .desktop-topbar .fa-facebook-f {
-    color: rgb(132, 210, 230);
+  color: rgb(132, 210, 230);
 }
 
 .desktop-topbar .fa-instagram {
-    color: rgb(255, 239, 161);
+  color: rgb(255, 239, 161);
 }
-
 
 /* Mobile Side Menu */
 
 .tablet-logo {
-    position: absolute;
-    top: 25px;
-    padding-left: 20px;
-    max-width: 220px;
-    z-index: 999;
-    opacity: 1;
-    transition: 0.3s ease-in-out;
+  position: absolute;
+  top: 25px;
+  padding-left: 20px;
+  max-width: 220px;
+  z-index: 999;
+  opacity: 1;
+  transition: 0.3s ease-in-out;
 }
 
 .tablet-logo.move-right {
-    opacity: 0%;
+  opacity: 0%;
 }
-
 
 /* Parallax image */
 
 .parallax {
-    z-index: 0;
-    background-image: linear-gradient(to right bottom, rgba(255, 93, 81, 0.5), rgba(255, 209, 59, 0.5) ), url('../images/cayman-chromatic-wall-art-home-decor-mockup.jpg');
-    height: 50rem;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    margin-bottom: 1.5rem;
+  z-index: 0;
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(255, 93, 81, 0.5),
+      rgba(255, 209, 59, 0.5)
+    ),
+    url("../images/cayman-chromatic-wall-art-home-decor-mockup.jpg");
+  height: 50rem;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 1.5rem;
 }
 
 @media (min-width: 467px) {
-    .store-header {
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: 2.8rem;
-        width: 450px;
-        line-height: 3.2rem;
-    }
+  .store-header {
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 2.8rem;
+    width: 450px;
+    line-height: 3.2rem;
+  }
 }
 
 @media (min-width: 975px) {
-    .parallax {
-        margin-top: -55px;
-    }
-    .store-header {
-        left: 50%;
-        transform: translateX(-50%);
-        font-size: 3.6rem;
-        width: 600px;
-        line-height: 3.6rem;
-    }
-    .scroll-down {
-        left: 50%;
-        transform: translateX(-50%);
-    }
+  .parallax {
+    margin-top: -55px;
+  }
+  .store-header {
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 3.6rem;
+    width: 600px;
+    line-height: 3.6rem;
+  }
+  .scroll-down {
+    left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
 @media (min-height: 650px) {
-    .parallax {
-        height: 45rem;
-    }
-    .store-header {
-        top: 42vh;
-    }
-    .scroll-down {
-        top: 75vh;
-    }
+  .parallax {
+    height: 45rem;
+  }
+  .store-header {
+    top: 42vh;
+  }
+  .scroll-down {
+    top: 75vh;
+  }
 }
 
 @media (min-height: 800px) {
-    .parallax {
-        height: 52rem;
-    }
-    .store-header {
-        top: 23rem;
-    }
-    .scroll-down {
-        top: 45rem;
-    }
+  .parallax {
+    height: 52rem;
+  }
+  .store-header {
+    top: 23rem;
+  }
+  .scroll-down {
+    top: 45rem;
+  }
 }
-
 
 /* ------------Store section------------- */
 
 .container {
-    position: relative;
-    display: inline;
-    left: 0;
-    transform: translateX(0);
-    grid-gap: 15px;
-    padding: 0 0 0 0;
-    opacity: 1;
-    transition: 0.3s ease-in-out;
+  position: relative;
+  display: inline;
+  left: 0;
+  transform: translateX(0);
+  grid-gap: 15px;
+  padding: 0 0 0 0;
+  opacity: 1;
+  transition: 0.3s ease-in-out;
 }
 
 .container.move-right {
-    opacity: .5;
-    margin-left: 7rem;
+  opacity: 0.5;
+  margin-left: 7rem;
 }
 
 .container h1 {
-    font-size: 1.2rem;
-    padding-left: .5rem;
-    margin-bottom: .5rem;
+  font-size: 1.2rem;
+  padding-left: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .container h2 {
-    color: rgb(38, 38, 38);
-    text-align: left;
-    padding: .5rem 0 1.5rem 1rem;
+  color: rgb(38, 38, 38);
+  text-align: left;
+  padding: 0.5rem 0 1.5rem 1rem;
 }
 
 .container h3 {
-    color: rgb(75, 75, 75);
-    font-size: .8rem;
-    letter-spacing: .1rem;
-    padding: 0 0 1.5rem .8rem;
+  color: rgb(75, 75, 75);
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+  padding: 0 0 1.5rem 0.8rem;
 }
 
 .container h4 {
-    font-weight: 300;
-    padding: 0 0 1.5rem 0;
+  font-weight: 300;
+  padding: 0 0 1.5rem 0;
 }
 
 .sidebar {
-    position: relative;
-    display: inline-block;
-    color: rgb(29, 29, 29);
-    text-decoration: none;
-    text-transform: uppercase;
-    font-size: .8rem;
-    line-height: 17px;
-    font-weight: 300;
-    transition: left 0.6s ease;
+  position: relative;
+  display: inline-block;
+  color: rgb(29, 29, 29);
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  line-height: 17px;
+  font-weight: 300;
+  transition: left 0.6s ease;
 }
 
 #store-section {
-    display: grid;
-    grid-template-columns: auto auto;
-    padding-top: 1.7rem;
+  display: grid;
+  grid-template-columns: auto auto;
+  padding-top: 1.7rem;
 }
 
 .card-section {
-    grid-column-start: 1;
+  grid-column-start: 1;
 }
 
-
-
-
 /* ------------Sidebar Filter------------- */
-
 
 /* The "show" class is added to the filtered elements */
 
 .display-cards {
-    display: block;
-    display: none;
+  display: block;
+  display: none;
 }
-
 
 /* Style the buttons */
 
 .btn {
-    border: none;
-    outline: none;
-    font-family: 'Josefin Sans', sans-serif;
-    padding: 12px 0;
-    margin-left: 0;
-    background: none;
-    cursor: pointer;
-    text-transform: uppercase;
-    font-size: .6rem;
-    font-weight: 300;
-    letter-spacing: .05rem;
-    width: 110px;
-    transition: 0.2s ease;
+  border: none;
+  outline: none;
+  font-family: "Josefin Sans", sans-serif;
+  padding: 12px 0;
+  margin-left: 0;
+  background: none;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 0.6rem;
+  font-weight: 300;
+  letter-spacing: 0.05rem;
+  width: 110px;
+  transition: 0.2s ease;
 }
-
 
 /* Add a grey background color on mouse-over */
 
 .btn:hover {
-    background-color: rgb(64, 64, 64);
-    color: #fff;
+  background-color: rgb(64, 64, 64);
+  color: #fff;
 }
 
 .chrom2:hover {
-    background-image: linear-gradient(to right, rgb(255, 162, 80), rgb(255, 96, 146));
+  background-image: linear-gradient(
+    to right,
+    rgb(255, 162, 80),
+    rgb(255, 96, 146)
+  );
 }
 
 .chrom1:hover {
-    background-image: linear-gradient(to right, rgb(80, 173, 255), rgb(76, 232, 125));
+  background-image: linear-gradient(
+    to right,
+    rgb(80, 173, 255),
+    rgb(76, 232, 125)
+  );
 }
 
 .chrom3:hover {
-    background-image: linear-gradient(to right, rgb(34, 34, 34), rgb(82, 82, 82));
+  background-image: linear-gradient(to right, rgb(34, 34, 34), rgb(82, 82, 82));
 }
 
 .red:hover {
-    background-color: rgb(255, 92, 92);
+  background-color: rgb(255, 92, 92);
 }
 
 .orange:hover {
-    background-color: rgb(255, 147, 31);
+  background-color: rgb(255, 147, 31);
 }
 
 .yellow:hover {
-    background-color: rgb(255, 196, 0);
+  background-color: rgb(255, 196, 0);
 }
 
 .green:hover {
-    background-color: rgb(104, 222, 65);
+  background-color: rgb(104, 222, 65);
 }
 
 .turquoise:hover {
-    background-color: rgb(65, 222, 206);
+  background-color: rgb(65, 222, 206);
 }
 
 .blue:hover {
-    background-color: rgb(65, 175, 222);
+  background-color: rgb(65, 175, 222);
 }
 
 .purple:hover {
-    background-color: rgb(157, 72, 194);
+  background-color: rgb(157, 72, 194);
 }
 
 .pink:hover {
-    background-color: rgb(253, 93, 178);
+  background-color: rgb(253, 93, 178);
 }
 
 .bw:hover {
-    background-color: rgb(52, 52, 52);
+  background-color: rgb(52, 52, 52);
 }
-
 
 /* Add a dark background color to the active button */
 
 .btn.active {
-    background-color: rgb(199, 199, 199);
-    color: rgb(255, 255, 255);
-    font-weight: 400;
+  background-color: rgb(199, 199, 199);
+  color: rgb(255, 255, 255);
+  font-weight: 400;
 }
 
 #artSeriesBtn {
-    margin-left: 7vw;
-    margin-right: 7vw;
-    border-bottom: 1px solid rgb(228, 228, 228);
-    padding-bottom: 1rem;
-    margin-bottom: 1rem;
+  margin-left: 7vw;
+  margin-right: 7vw;
+  border-bottom: 1px solid rgb(228, 228, 228);
+  padding-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 #colorBtn {
-    margin-left: 7vw;
-    margin-right: 7vw;
+  margin-left: 7vw;
+  margin-right: 7vw;
 }
-
-
-
-
 
 @media (min-width: 900px) {
-    .container {
-        position: relative;
-        display: grid;
-        left: 50%;
-        transform: translateX(-50%);
-        padding: 1.8rem 1.2rem 0 0.2rem;
-    }
-    
-    .container h1 {
-        font-size: 2.2rem;
-    }
-    
-    .container h2 {
-        padding: 0 0 1.5rem 0;
-    }
-    
-    .container h3 {
-        font-size: .7rem;
-        letter-spacing: .1rem;
-        padding: 0 0 1.5rem 0;
-    }
-    
-    .sidebar {
-        position: fixed;
-        width: 170px;
-        margin-top: 6rem;
-        margin-left: .5rem;
-        line-height: 20px;
-    }
-    
-    #store-section {
-        grid-template-columns: 20vw auto;
-    }
-    
-    .card-section {
-        grid-column-start: 2;
-    }
+  .container {
+    position: relative;
+    display: grid;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 1.8rem 1.2rem 0 0.2rem;
+  }
 
-    .btn {
-        padding: 12px 16px;
-        margin-left: 0;
-        font-size: .7rem;
-        width: 165px;
-    }
+  .container h1 {
+    font-size: 2.2rem;
+  }
 
-    #artSeriesBtn {
-        margin-left: 0;
-        margin-right: 0;
-    }
-    
-    #colorBtn {
-        margin-left: 0;
-        margin-right: 0;
-    }
+  .container h2 {
+    padding: 0 0 1.5rem 0;
+  }
 
+  .container h3 {
+    font-size: 0.7rem;
+    letter-spacing: 0.1rem;
+    padding: 0 0 1.5rem 0;
+  }
+
+  .sidebar {
+    position: fixed;
+    width: 170px;
+    margin-top: 6rem;
+    margin-left: 0.5rem;
+    line-height: 20px;
+  }
+
+  #store-section {
+    grid-template-columns: 20vw auto;
+  }
+
+  .card-section {
+    grid-column-start: 2;
+  }
+
+  .btn {
+    padding: 12px 16px;
+    margin-left: 0;
+    font-size: 0.7rem;
+    width: 165px;
+  }
+
+  #artSeriesBtn {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #colorBtn {
+    margin-left: 0;
+    margin-right: 0;
+  }
 }
 
-
 @media (min-width: 1060px) {
-    .container h3 {
-        font-size: .9rem;
-    }
-    
-    .sidebar {
-        margin-left: 1rem;
-    }
-    
-    #store-section {
-        grid-template-columns: 18vw auto;
-    }
+  .container h3 {
+    font-size: 0.9rem;
+  }
 
+  .sidebar {
+    margin-left: 1rem;
+  }
 
-    .btn {
-        font-size: .8rem;
-        width: 175px;
-    }
+  #store-section {
+    grid-template-columns: 18vw auto;
+  }
 
+  .btn {
+    font-size: 0.8rem;
+    width: 175px;
+  }
 }
 
 @media (min-width: 1200px) {
-    
-    #store-section {
-        grid-template-columns: 17vw auto;
-    }
+  #store-section {
+    grid-template-columns: 17vw auto;
+  }
 
-    .btn {
-        font-size: .9rem;
-        width: 185px;
-    }
-
+  .btn {
+    font-size: 0.9rem;
+    width: 185px;
+  }
 }
 
 @media (min-width: 1350px) {
+  .container {
+    margin: 0 1vw;
+  }
 
-    .container {
-        margin: 0 1vw;
-    }
-
-    #store-section {
-        grid-template-columns: 220px auto;
-        margin: 0 2vw;
-    }
-
+  #store-section {
+    grid-template-columns: 220px auto;
+    margin: 0 2vw;
+  }
 }
-
 
 /* ------------Right Side Cart------------- */
 
 #purchase-side {
-    z-index: 999;
-    position: fixed;
-    width: 650px;
-    height: 100%;
-    top: 0px;
-    right: -750px;
-    text-align: center;
-    background-color: rgb(255, 255, 255);
-    color: rgb(45, 45, 45);
-    text-decoration: none;
-    text-transform: uppercase;
-    line-height: 65px;
-    font-weight: 300;
-    padding: 1.5rem 2.5rem;
-    border-width: 15px;
-    border-style: solid;
-    border-image: 
-      linear-gradient(
-        to bottom, 
-        rgb(255, 162, 80), 
-        rgb(255, 96, 146)
-      ) 1 100%;
-    transition: all 0.6s ease;
+  z-index: 999;
+  position: fixed;
+  width: 650px;
+  height: 100%;
+  top: 0px;
+  right: -750px;
+  text-align: center;
+  background-color: rgb(255, 255, 255);
+  color: rgb(45, 45, 45);
+  text-decoration: none;
+  text-transform: uppercase;
+  line-height: 65px;
+  font-weight: 300;
+  padding: 1.5rem 2.5rem;
+  border-width: 15px;
+  border-style: solid;
+  border-image: linear-gradient(to bottom, rgb(255, 162, 80), rgb(255, 96, 146))
+    1 100%;
+  transition: all 0.6s ease;
 }
 
 #purchase-side img {
-    width: 400px;
-    margin-left: auto;
-    margin-right: auto;
-    display: block;
-    padding: 1rem 0;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  padding: 1rem 0;
 }
 
 #purchase-side .fa-angle-double-right {
-    top: 1.5rem;
-    left: 2.5rem;
-    position: absolute;
-    font-size: 3rem;
-    text-align: left;
-    float: left;
-    cursor: pointer;
-    transition: 0.6s ease;
+  top: 1.5rem;
+  left: 2.5rem;
+  position: absolute;
+  font-size: 3rem;
+  text-align: left;
+  float: left;
+  cursor: pointer;
+  transition: 0.6s ease;
 }
 
 #purchase-side .fa-angle-double-right:hover {
-    left: 3rem;
+  left: 3rem;
 }
 
 #purchase-side h1 {
-    letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
 }
 
 #purchase-side h2 {
-    margin-bottom: 1rem;
+  margin-bottom: 1rem;
 }
 
 #purchase-side h3 {
-    letter-spacing: .1rem;
-    text-transform: none;
-    font-size: 1.7rem;
-    text-align: left;
+  letter-spacing: 0.1rem;
+  text-transform: none;
+  font-size: 1.7rem;
+  text-align: left;
 }
 
 #purchase-side .contactus {
-    margin-left: auto;
-    margin-right: auto;
-    letter-spacing: .1rem;
-    text-transform: none;
-    font-size: 1.3rem;
-    line-height: 1.6rem;
-    width: 400px;
-    text-align: center;
-    padding: 3rem;
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: 0.1rem;
+  text-transform: none;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  width: 400px;
+  text-align: center;
+  padding: 3rem;
 }
 
 .item-total {
-    margin-top: 2rem;
-    margin-left: auto;
-    margin-right: auto;
-    text-transform: none;
-    letter-spacing: .1rem;
-    text-align: left;
-    font-size: 1.5rem;
+  margin-top: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  text-transform: none;
+  letter-spacing: 0.1rem;
+  text-align: left;
+  font-size: 1.5rem;
 }
 
 .purch-btn {
-    margin-left: auto;
-    margin-right: auto;
-    padding: 1rem 2rem;
-    width: 300px;
-    font-family: 'Josefin Sans', sans-serif;
-    font-weight: 400;
-    font-size: 1.3rem;
-    background-color: #fff;
-    border: 2px solid rgb(218, 218, 218);
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem 2rem;
+  width: 300px;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 400;
+  font-size: 1.3rem;
+  background-color: #fff;
+  border: 2px solid rgb(218, 218, 218);
 }
 
 .addCart {
-    width: 400px;
-    font-size: 1.5;
+  width: 400px;
+  font-size: 1.5;
 }
 
 .purch-btn:active {
-    background-color: rgb(255, 200, 200);
-
+  background-color: rgb(255, 200, 200);
 }
 
-.purch-btn:focus {outline:0 !important;}
+.purch-btn:focus {
+  outline: 0 !important;
+}
 
 .price {
-    margin-left: 2rem;
+  margin-left: 2rem;
 }
 
 #addToCart {
-    display: flex;
-    margin-top: 1rem;
+  display: flex;
+  margin-top: 1rem;
 }
